@@ -1,0 +1,56 @@
+INFO:root:Ran with args: ({'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True},), and kwargs: {}
+INFO:root:Ran with args: (), and kwargs: {}
+INFO:root:Ran with args: (<__main__.sql_create object at 0x000001DDD3658DD8>, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {}
+INFO:root:2018-11-13 21:59:30 Ran with args: (<__main__.sql_create object at 0x000001DDD3707588>, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {}
+INFO:root: 2018-11-13 22:07:53 Ran with args: (<__main__.sql_create object at 0x000001DDD3707C50>, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {}
+INFO:root: 2018-11-13 22:07:53 Ran with args: (<__main__.sql_create object at 0x000001DDD3707C50>, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), and kwargs: {}
+INFO:root: 2018-11-13 22:07:53 Ran with args: (<__main__.sql_create object at 0x000001DDD3707C50>, 'hec_0bar', 'ic_0bar'), and kwargs: {}
+INFO:root: 2018-11-13 22:07:54 Ran with args: (<__main__.sql_create object at 0x000001DDD3707C50>, 'hec_9psi', 'ic_9psi'), and kwargs: {}
+INFO:root: 2018-11-13 22:07:54 Ran with args: (<__main__.sql_create object at 0x000001DDD3707C50>, 'hec_22bar', 'ic_22bar'), and kwargs: {}
+INFO:root: 2018-11-13 22:07:54 Ran with args: (<__main__.sql_create object at 0x000001DDD3707C50>,), and kwargs: {}
+INFO:root: 2018-11-13 22:11:11 Ran with args: (<__main__.sql_create object at 0x000001DDD37182E8>, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:11:11 Ran with args: (<__main__.sql_create object at 0x000001DDD37182E8>, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:11:11 Ran with args: (<__main__.sql_create object at 0x000001DDD37182E8>, 'hec_0bar', 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:11:11 Ran with args: (<__main__.sql_create object at 0x000001DDD37182E8>, 'hec_9psi', 'ic_9psi'), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:11:11 Ran with args: (<__main__.sql_create object at 0x000001DDD37182E8>, 'hec_22bar', 'ic_22bar'), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:11:11 Ran with args: (<__main__.sql_create object at 0x000001DDD37182E8>,), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:27:38 Ran with args: (<__main__.sql_create object at 0x000001DDD3719470>, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:27:38 Ran with args: (<__main__.sql_create object at 0x000001DDD3719470>, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:27:38 Ran with args: (<__main__.sql_create object at 0x000001DDD3719470>, 'hec_0bar', 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:27:38 Ran with args: (<__main__.sql_create object at 0x000001DDD3719470>, 'hec_9psi', 'ic_9psi'), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:27:38 Ran with args: (<__main__.sql_create object at 0x000001DDD3719470>, 'hec_22bar', 'ic_22bar'), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:27:38 Ran with args: (<__main__.sql_create object at 0x000001DDD3719470>,), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:28:40 Ran with args: (<__main__.sql_create object at 0x000001DDD3719908>, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:28:40 Ran with args: (<__main__.sql_create object at 0x000001DDD3719908>, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:30:08 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:30:08 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:30:08 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>, 'hec_0bar', 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:30:08 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>, {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:30:22 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>, 'hec_9psi', 'ic_9psi'), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:30:22 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>, {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:30:36 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>, 'hec_22bar', 'ic_22bar'), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:30:36 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>, {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}), and kwargs: {} 
+
+INFO:root: 2018-11-13 22:30:41 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>,), and kwargs: {} 
+

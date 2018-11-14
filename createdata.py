@@ -3,17 +3,53 @@
 Created on Sat Nov  3 00:25:11 2018
 
 @author: dlotnyk
+Create SQL database of pulsing data including create reruired tables (and dropping), 
+read data from .dat files and inserting values into SQL table, check if value is nan and replace it with NULL.
+Timer and log decorators are used to measure processing time and log commands into 'work.log'
+
 """
 from __future__ import print_function
 import mysql.connector as conn
 import numpy as np
 from mysql.connector import errorcode
+from functools import wraps
 
 class sql_create():
     '''create data for pulses'''
     def __init__(self):
         self.tc=[0.929,1.013,2.293] # list of Tc for experiments
         self.tables=[('hec_0bar','ic_0bar'),('hec_9psi','ic_9psi'),('hec_22bar','ic_22bar')]
+        
+    def time_this(original_function):  
+        '''Measures the processing time. Decorator'''
+        @wraps(original_function)                      
+        def new_function(*args,**kwargs):    
+            import time                 
+            before = time.time()                     
+            x = original_function(*args,**kwargs)                
+            after = time.time()                      
+            print ("Elapsed Time of fun {0} = {1}".format(original_function.__name__,after-before))      
+            return x                                             
+        return new_function  
+
+    def my_logger(orig_func):
+        '''Decorate function to write into log on the level ERROR'''
+        import logging
+        import datetime
+        logging.basicConfig(filename='work.log'.format(orig_func.__name__), level=logging.ERROR)
+        
+        @wraps(orig_func)
+        def wrapper(*args,**kwargs):
+            dt=datetime.datetime.now()
+            dt_str=str(dt)
+            vrema=dt_str.split('.')[0]
+            logging.info(
+                    ' {} Ran with args: {}, and kwargs: {} \n'.format(vrema, args, kwargs))
+            return orig_func(*args, **kwargs) 
+        return wrapper 
+    
+    @my_logger  
+    @time_this
     def connect_f(self,conf):
         '''connect to mysql server'''
         assert type(conf) is dict, "Input parameter should be dict!!!"
@@ -33,12 +69,16 @@ class sql_create():
             if self.cnx:
                 self.cnx.close() 
     
+    @my_logger  
+    @time_this
     def close_f(self):
         '''close connection'''
         self.cursor.close()
         self.cnx.close()
         print('Disconnected!')
     
+    @my_logger  
+    @time_this
     def create_table(self,tb_name1,tb_name2):
         '''create a table with tb_name name'''
 #        CREATE TABLE `test1`.`some2` ( `fir` DOUBLE NOT NULL , `sec` DOUBLE NULL , `thir` DOUBLE NULL , `four` DOUBLE NOT NULL , PRIMARY KEY (`fir`), FOREIGN KEY (`four`) REFERENCES `test1`.`some`(`fir`)) ENGINE = InnoDB
@@ -91,9 +131,11 @@ class sql_create():
                 print(err.msg)
         else:
             print("OK")   
-        
+    
+    @my_logger  
+    @time_this    
     def drop_f(self,tb_name):
-        '''delete tables tb_name'''
+        '''delete tables in tb_name dictionary'''
         assert type(tb_name) is dict
         dis_fk=("SET foreign_key_checks = 0")
         self.cursor.execute(dis_fk)
@@ -121,8 +163,9 @@ class sql_create():
                     print(err.msg)
             else:
                 print("OK") 
+    
     def insert_sql(self,tab_name1,tab_name2,val1,val2):
-        '''insert values imported in insert_values function into sql tables tab_name1 and tab_name2'''
+        '''insert values in row imported in insert_values function into sql tables tab_name1 and tab_name2'''
         assert type(tab_name1) is str and type(tab_name2) is str, "Table name should be str"
         assert type(val1) is tuple and type(val2) is tuple, "values should be combined into tuples"
         add_row1 = ("INSERT INTO "+tab_name1+" "
@@ -136,12 +179,18 @@ class sql_create():
             self.cursor.execute(add_row2)
         except conn.Error as err:
             print(err.msg)
-    def insert_tables(self,path1,path2):
-        '''insert valueus to sql tables imported from .dat files'''
-        assert type(path1) is list and type(path2) is list
+    
+    @my_logger  
+    @time_this 
+    def insert_tables(self,d_value):
+        '''insert valueus to sql tables imported from .dat files for single pressure.
+        Replace nan with NULL'''
+        assert type(d_value) is dict
+        path1=d_value['path1']
+        path2=d_value['path2']
         # truncate
-        trun1=("ALTER TABLE {} AUTO_INCREMENT = 1".format(self.tables[0][0]))
-        trun2=("ALTER TABLE {} AUTO_INCREMENT = 1".format(self.tables[0][1]))
+        trun1=("ALTER TABLE {} AUTO_INCREMENT = 1".format(d_value['tables'][0]))
+        trun2=("ALTER TABLE {} AUTO_INCREMENT = 1".format(d_value['tables'][1]))
         self.cursor.execute(trun1)
         self.cursor.execute(trun2)
         counter=0
@@ -186,17 +235,18 @@ class sql_create():
                     val22.append(str(jj))
             val22.append(counter)
             val2=tuple(map(str,val22))
-            self.insert_sql(self.tables[0][0],self.tables[0][1],val1,val2)
+            self.insert_sql(d_value['tables'][0],d_value['tables'][1],val1,val2)
             counter +=1
         self.cnx.commit()
-        tab1_count=("SELECT COUNT(`index`) FROM `{}`".format(self.tables[0][0]))
-        tab2_count=("SELECT COUNT(`index`) FROM `{}`".format(self.tables[0][1]))
+        tab1_count=("SELECT COUNT(`index`) FROM `{}`".format(d_value['tables'][0]))
+        tab2_count=("SELECT COUNT(`index`) FROM `{}`".format(d_value['tables'][1]))
         self.cursor.execute(tab1_count)
         res1=self.cursor.fetchall()
         self.cursor.execute(tab2_count)
         res2=self.cursor.fetchall()
         print('Writing ends')
-        assert res1[0][0] == counter and res2[0][0] == counter, "dimentions of SQL tables and import table are missmatched"
+        assert res1[0][0] == counter and res2[0][0] == counter, "dimentions of SQL tables and import table are missmatched"  
+    
 # ------------------------------------------------------------
 conf = {
         'user': 'dlotnyk',
@@ -218,20 +268,10 @@ forks={'0bar':{'path1':["CF_0bar_01.dat","CF_0bar_02.dat","CF_0bar_03.dat"],
                  'tables':('hec_22bar','ic_22bar')
                 }           
        }
-# Fork 1
-path1=["CF_0bar_01.dat","CF_0bar_02.dat","CF_0bar_03.dat"]
-# Fork 2
-path2=["FF_0bar_01.dat","FF_0bar_02.dat","FF_0bar_03.dat"]
-tables=[('hec_0bar','ic_0bar'),('hec_9psi','ic_9psi'),('hec_22bar','ic_22bar')]
 A=sql_create()
 A.connect_f(conf)
-A.drop_f(forks)
-#for p in tables:
-#    A.create_table(p[0],p[1])
-#
-#A.insert_values(path1,path2)
-#A.create_table('hec_0bar','ic_0bar')
-#A.create_table('hec_9psi','ic_9psi')
-#A.create_table('hec_22bar','ic_22bar')
+#A.drop_f(forks)
+#for k,v in forks.items():
+#    A.create_table(v['tables'][0],v['tables'][1])
+#    A.insert_tables(v)
 A.close_f()
-#print(forks['9psi']['tables'][0])
