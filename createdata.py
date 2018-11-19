@@ -141,7 +141,7 @@ class sql_create():
         self.cursor.execute(dis_fk)
         for k,v in tb_name.items():
             p=v['tables'] 
-            table_IC=("DROP TABLE `{}`".format(p[1]))
+            table_IC=("DROP TABLE IF EXISTS `{}`".format(p[1]))
             try:
                 print("Deleting table: ".format(tb_name), end='')
                 self.cursor.execute(table_IC)  
@@ -268,10 +268,10 @@ forks={'0bar':{'path1':["CF_0bar_01.dat","CF_0bar_02.dat","CF_0bar_03.dat"],
                  'tables':('hec_22bar','ic_22bar')
                 }           
        }
-A=sql_create()
-A.connect_f(conf)
-#A.drop_f(forks)
-#for k,v in forks.items():
-#    A.create_table(v['tables'][0],v['tables'][1])
-#    A.insert_tables(v)
-A.close_f()
+#A=sql_create()
+#A.connect_f(conf)
+##A.drop_f(forks)
+##for k,v in forks.items():
+##    A.create_table(v['tables'][0],v['tables'][1])
+##    A.insert_tables(v)
+#A.close_f()
