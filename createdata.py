@@ -83,7 +83,7 @@ class sql_create():
         '''create a table with tb_name name'''
 #        CREATE TABLE `test1`.`some2` ( `fir` DOUBLE NOT NULL , `sec` DOUBLE NULL , `thir` DOUBLE NULL , `four` DOUBLE NOT NULL , PRIMARY KEY (`fir`), FOREIGN KEY (`four`) REFERENCES `test1`.`some`(`fir`)) ENGINE = InnoDB
 #        ID int NOT NULL UNIQUE,
-        assert type(tb_name1) is str or type(tb_name2) is str, "table name should be str"
+        assert type(tb_name1) is str and type(tb_name2) is str, "tables name should be str"
         table_HEC=("CREATE TABLE `{}` ("
                          "  `index` int NOT NULL UNIQUE AUTO_INCREMENT COMMENT 'index',"
                          "  `time` DOUBLE NOT NULL UNIQUE COMMENT 'universal time [sec]',"
@@ -136,7 +136,8 @@ class sql_create():
     @time_this    
     def drop_f(self,tb_name):
         '''delete tables in tb_name dictionary'''
-        assert type(tb_name) is dict
+        assert type(tb_name) is dict, "tables should combine into dict"
+        assert type(list(tb_name.values())[0]) is dict, "input parameter should be a nested dict"
         dis_fk=("SET foreign_key_checks = 0")
         self.cursor.execute(dis_fk)
         for k,v in tb_name.items():
@@ -185,7 +186,8 @@ class sql_create():
     def insert_tables(self,d_value):
         '''insert valueus to sql tables imported from .dat files for single pressure.
         Replace nan with NULL'''
-        assert type(d_value) is dict
+        assert type(d_value) is dict, "tables should combine into dict"
+        assert type(list(d_value.values())[2]) is tuple, "input parameter should obtain a tuple"
         path1=d_value['path1']
         path2=d_value['path2']
         # truncate
@@ -238,6 +240,7 @@ class sql_create():
             self.insert_sql(d_value['tables'][0],d_value['tables'][1],val1,val2)
             counter +=1
         self.cnx.commit()
+#        print(counter)
         tab1_count=("SELECT COUNT(`index`) FROM `{}`".format(d_value['tables'][0]))
         tab2_count=("SELECT COUNT(`index`) FROM `{}`".format(d_value['tables'][1]))
         self.cursor.execute(tab1_count)
@@ -270,7 +273,9 @@ forks={'0bar':{'path1':["CF_0bar_01.dat","CF_0bar_02.dat","CF_0bar_03.dat"],
        }
 #A=sql_create()
 #A.connect_f(conf)
-##A.drop_f(forks)
+#a=list('a')
+#A.drop_f(forks)
+#A.drop_f(a)
 ##for k,v in forks.items():
 ##    A.create_table(v['tables'][0],v['tables'][1])
 ##    A.insert_tables(v)
