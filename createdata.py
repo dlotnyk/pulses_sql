@@ -13,18 +13,20 @@ import mysql.connector as conn
 import numpy as np
 from mysql.connector import errorcode
 from functools import wraps
-
+import sqlite3 as lite
 class sql_create():
     '''create data for pulses'''
-    def __init__(self):
-        self.tc=[0.929,1.013,2.293] # list of Tc for experiments
-        self.tables=[('hec_0bar','ic_0bar'),('hec_9psi','ic_9psi'),('hec_22bar','ic_22bar')]
+    tc=[0.929,1.013,2.293] # list of Tc for experiments
+    tables={'0nar':('hec_0bar','ic_0bar'),'9psi':('hec_9psi','ic_9psi'),'22bar':('hec_22bar','ic_22bar')}
+    def __init__(self,conf):
+        self.conf=conf
+        self.connect_f(conf)
         
     def time_this(original_function):  
         '''Measures the processing time. Decorator'''
         @wraps(original_function)                      
         def new_function(*args,**kwargs):    
-            import time                 
+            import time       
             before = time.time()                     
             x = original_function(*args,**kwargs)                
             after = time.time()                      
@@ -53,6 +55,7 @@ class sql_create():
     def connect_f(self,conf):
         '''connect to mysql server'''
         assert type(conf) is dict, "Input parameter should be dict!!!"
+        self.autoinc='AUTO_INCREMENT'
         self.db_name=conf['database']
         self.cnx = None
         try:
@@ -85,7 +88,7 @@ class sql_create():
 #        ID int NOT NULL UNIQUE,
         assert type(tb_name1) is str and type(tb_name2) is str, "tables name should be str"
         table_HEC=("CREATE TABLE `{}` ("
-                         "  `index` int NOT NULL UNIQUE AUTO_INCREMENT COMMENT 'index',"
+                         "  `index` int NOT NULL UNIQUE {} COMMENT 'index',"
                          "  `time` DOUBLE NOT NULL UNIQUE COMMENT 'universal time [sec]',"
                          "  `Q` DOUBLE NULL COMMENT 'quality factor',"
                          "  `Inf_Freq` DOUBLE NULL COMMENT 'calculated frequency [HZ]',"
@@ -96,7 +99,7 @@ class sql_create():
                          "  `pulse` DOUBLE NOT NULL COMMENT 'number of pulse',"
                          "  KEY id (`index`),"
                          "  PRIMARY KEY (`pulse`)"
-                         ") ENGINE=InnoDB".format(tb_name1))
+                         ") ENGINE=InnoDB".format(tb_name1,self.autoinc))
         try:
             print("Creating table for HEC {}: ".format(tb_name1), end='')
             self.cursor.execute(table_HEC)
@@ -108,7 +111,7 @@ class sql_create():
         else:
             print("OK")
         table_IC=("CREATE TABLE `{}` ("
-                         "  `index` int NOT NULL AUTO_INCREMENT COMMENT 'index',"
+                         "  `index` int NOT NULL {} COMMENT 'index',"
                          "  `time` DOUBLE NOT NULL UNIQUE COMMENT 'universal time [sec]',"
                          "  `Q` DOUBLE NULL COMMENT 'quality factor',"
                          "  `Inf_Freq` DOUBLE NULL COMMENT 'calculated frequency [HZ]',"
@@ -119,7 +122,7 @@ class sql_create():
                          "  `pulse` DOUBLE NOT NULL UNIQUE COMMENT 'number of pulse',"
                          "  PRIMARY KEY (`index`),"
                          "  FOREIGN KEY (`pulse`) REFERENCES `{}`.`{}`(`pulse`) ON UPDATE CASCADE"
-                         ") ENGINE=InnoDB".format(tb_name2,self.db_name,tb_name1))  
+                         ") ENGINE=InnoDB".format(tb_name2,self.autoinc,self.db_name,tb_name1))  
 #        print(table_IC)
         try:
             print("Creating table for IC {}: ".format(tb_name2), end='')
@@ -191,8 +194,8 @@ class sql_create():
         path1=d_value['path1']
         path2=d_value['path2']
         # truncate
-        trun1=("ALTER TABLE {} AUTO_INCREMENT = 1".format(d_value['tables'][0]))
-        trun2=("ALTER TABLE {} AUTO_INCREMENT = 1".format(d_value['tables'][1]))
+        trun1=("ALTER TABLE {} {} = 1".format(d_value['tables'][0],self.autoinc))
+        trun2=("ALTER TABLE {} {} = 1".format(d_value['tables'][1],self.autoinc))
         self.cursor.execute(trun1)
         self.cursor.execute(trun2)
         counter=0
@@ -249,8 +252,37 @@ class sql_create():
         res2=self.cursor.fetchall()
         print('Writing ends')
         assert res1[0][0] == counter and res2[0][0] == counter, "dimentions of SQL tables and import table are missmatched"  
+
+    @my_logger  
+    @time_this 
+    def connect_loc(self,conf):   
+        assert type(conf) is str, "input parameter must be str"
+        self.autoinc=''
+        self.cnx=lite.connect(conf)
+        self.cursor = self.cnx.cursor()
     
+    @my_logger  
+    @time_this 
+    def select_col(self,r_list,tb_name):
+        assert type(r_list) is list and type(tb_name) is str, "list of rows should have a type list"
+        cur=''
+        for ii in r_list:
+            cur+="`"+ii+"`, "
+        cur=cur[0:-2]
+        sel=("SELECT "+cur+"FROM `{}` WHERE 1".format(tb_name))
+        self.cursor.execute(sel)
+        res=self.cursor.fetchall()
+        dat=np.zeros(np.shape(res),dtype=float)
+        assert len(dat) > 0, "no data were taken from SELECT"
+        with np.nditer(dat,flags=['multi_index'],op_flags=['readwrite']) as it:
+            for x in it:
+                if res[it.multi_index[0]][it.multi_index[1]] is None: # check if NULL
+                    x[...]=np.nan
+                else:
+                    x[...]=res[it.multi_index[0]][it.multi_index[1]]
+        return dat
 # ------------------------------------------------------------
+conf_loc='database.db'
 conf = {
         'user': 'dlotnyk',
         'password': 'RiDeaBiKe2RuN',
@@ -271,11 +303,14 @@ forks={'0bar':{'path1':["CF_0bar_01.dat","CF_0bar_02.dat","CF_0bar_03.dat"],
                  'tables':('hec_22bar','ic_22bar')
                 }           
        }
-#A=sql_create()
-#A.connect_f(conf)
-#a=list('a')
-#A.drop_f(forks)
-#A.drop_f(a)
+        
+        
+#A=sql_create(conf)
+##A.select_col(['index','Q'],'tb_n')
+##A.connect_loc(conf_loc)
+##A.connect_f(conf)
+#res=A.select_col(['Tmc'],'hec_22bar')
+##A.drop_f(forks)
 ##for k,v in forks.items():
 ##    A.create_table(v['tables'][0],v['tables'][1])
 ##    A.insert_tables(v)

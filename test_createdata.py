@@ -11,6 +11,7 @@ import numpy as np
 from createdata import sql_create
 import warnings
 warnings.simplefilter('ignore', np.RankWarning)
+warnings.filterwarnings("ignore", message="Reloaded modules: <chromosome_length>")
 class TestCreatedata(unittest.TestCase):
     '''testing'''
     @classmethod
@@ -18,7 +19,7 @@ class TestCreatedata(unittest.TestCase):
         cls.forks={'0bar':{'path1':["CF_0bar_01.dat"],
                'path2':["FF_0bar_01.dat"],
                'tables':('table1','table2')
-               }}
+               } }
         cls.tab_ch1=("SELECT * "
                 "FROM information_schema.tables "
                 "WHERE table_schema = 'test_s' " 
@@ -39,8 +40,8 @@ class TestCreatedata(unittest.TestCase):
         'raise_on_warnings': True,
         }
 #       
-        self.tinst=sql_create()
-        self.tinst.connect_f(conf)
+        self.tinst=sql_create(conf)
+#        self.tinst.connect_f(conf)
         self.tinst.drop_f(self.forks)
         print(' ')
                 
@@ -130,6 +131,29 @@ class TestCreatedata(unittest.TestCase):
         with self.assertRaises(AssertionError):
             self.tinst.insert_tables(a)
             self.tinst.insert_tables(b)
-
+    
+    def test_Select_col(self):
+        self.tinst.create_table('table1','table2')
+        self.tinst.insert_tables(self.forks['0bar'])
+        colmns=['time','Tmc']
+        tab_name='table2'
+        res=self.tinst.select_col(colmns,tab_name)
+        self.assertAlmostEqual(res[0][0],0, 'time should be zero')
+        non=True
+        nan=False
+        with np.nditer(res,flags=['multi_index'],op_flags=['readwrite']) as it:
+            for x in it:
+                if res[it.multi_index[0]][it.multi_index[1]] is None: # check if NULL
+                    non=False
+                if np.isnan(res[it.multi_index[0]][it.multi_index[1]]): # it should be some nan's
+                    nan=True
+        self.assertTrue(non," there are some unconverted None's")
+        self.assertTrue(nan,"no nan were fonud")
+        a=(1,2,3)
+        b=int(5)
+        with self.assertRaises(AssertionError):
+            self.tinst.select_col(a,tab_name)
+            self.tinst.select_col(colmns,b)
+                    
 if __name__ == '__main__':
     unittest.main()
