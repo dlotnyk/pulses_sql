@@ -16,8 +16,9 @@ from functools import wraps
 import sqlite3 as lite
 class sql_create():
     '''create data for pulses'''
-    tc=[0.929,1.013,2.293] # list of Tc for experiments
-    tables={'0nar':('hec_0bar','ic_0bar'),'9psi':('hec_9psi','ic_9psi'),'22bar':('hec_22bar','ic_22bar')}
+    
+    tc={'0bar':0.929,'9psi':1.013,'22bar':2.293} # list of Tc for experiments
+    tables={'0bar':('hec_0bar','ic_0bar'),'9psi':('hec_9psi','ic_9psi'),'22bar':('hec_22bar','ic_22bar')}
     def __init__(self,conf):
         self.conf=conf
         self.connect_f(conf)
@@ -88,17 +89,17 @@ class sql_create():
 #        ID int NOT NULL UNIQUE,
         assert type(tb_name1) is str and type(tb_name2) is str, "tables name should be str"
         table_HEC=("CREATE TABLE `{}` ("
-                         "  `index` int NOT NULL UNIQUE {} COMMENT 'index',"
-                         "  `time` DOUBLE NOT NULL UNIQUE COMMENT 'universal time [sec]',"
-                         "  `Q` DOUBLE NULL COMMENT 'quality factor',"
-                         "  `Inf_Freq` DOUBLE NULL COMMENT 'calculated frequency [HZ]',"
-                         "  `Tmc` DOUBLE NULL COMMENT 'Melting curve temperature [mK]',"
-                         "  `Tmc/Tc` DOUBLE NOT NULL COMMENT 'Tmc over Tc',"
-                         "  `Tloc` DOUBLE NOT NULL COMMENT 'Local chamber temperature [mK]',"
-                         "  `Tloc/Tc` DOUBLE NOT NULL COMMENT 'Tloc over Tc',"
-                         "  `pulse` DOUBLE NOT NULL COMMENT 'number of pulse',"
-                         "  KEY id (`index`),"
-                         "  PRIMARY KEY (`pulse`)"
+                           "`index` int NOT NULL UNIQUE {} COMMENT 'index', " 
+                           "`time` DOUBLE NOT NULL UNIQUE COMMENT 'universal time [sec]', "
+                           "`Q` DOUBLE NULL COMMENT 'quality factor', "
+                           "`Inf_Freq` DOUBLE NULL COMMENT 'calculated frequency [HZ]', "
+                           "`Tmc` DOUBLE NULL COMMENT 'Melting curve temperature [mK]', "
+                           "`Tmc/Tc` DOUBLE NOT NULL COMMENT 'Tmc over Tc', "
+                           "`Tloc` DOUBLE NOT NULL COMMENT 'Local chamber temperature [mK]', "
+                           "`Tloc/Tc` DOUBLE NOT NULL COMMENT 'Tloc over Tc', "
+                           "`pulse` DOUBLE NOT NULL COMMENT 'number of pulse', "
+                           "KEY id (`index`), "
+                           "PRIMARY KEY (`pulse`) "
                          ") ENGINE=InnoDB".format(tb_name1,self.autoinc))
         try:
             print("Creating table for HEC {}: ".format(tb_name1), end='')
