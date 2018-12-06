@@ -22,6 +22,8 @@ class sql_create():
     def __init__(self,conf):
         self.conf=conf
         self.connect_f(conf)
+    def __repr__(self):
+        return "Createdata SQL. db: {}".format(self.conf['database'])
         
     def time_this(original_function):  
         '''Measures the processing time. Decorator'''
@@ -39,7 +41,8 @@ class sql_create():
         '''Decorate function to write into log on the level ERROR'''
         import logging
         import datetime
-        logging.basicConfig(filename='work.log'.format(orig_func.__name__), level=logging.ERROR)
+        logging.getLogger('').handlers = []
+        logging.basicConfig(filename='work.log'.format(orig_func.__name__), level=logging.INFO)
         
         @wraps(orig_func)
         def wrapper(*args,**kwargs):
@@ -169,7 +172,7 @@ class sql_create():
             else:
                 print("OK") 
     
-    def insert_sql(self,tab_name1,tab_name2,val1,val2):
+    def __insert_sql(self,tab_name1,tab_name2,val1,val2):
         '''insert values in row imported in insert_values function into sql tables tab_name1 and tab_name2'''
         assert type(tab_name1) is str and type(tab_name2) is str, "Table name should be str"
         assert type(val1) is tuple and type(val2) is tuple, "values should be combined into tuples"
@@ -241,7 +244,7 @@ class sql_create():
                     val22.append(str(jj))
             val22.append(counter)
             val2=tuple(map(str,val22))
-            self.insert_sql(d_value['tables'][0],d_value['tables'][1],val1,val2)
+            self.__insert_sql(d_value['tables'][0],d_value['tables'][1],val1,val2)
             counter +=1
         self.cnx.commit()
 #        print(counter)
@@ -270,9 +273,13 @@ class sql_create():
         for ii in r_list:
             cur+="`"+ii+"`, "
         cur=cur[0:-2]
-        sel=("SELECT "+cur+"FROM `{}` WHERE 1".format(tb_name))
+        sel=("SELECT "+cur+"FROM `{0}` WHERE 1 ORDER BY `{0}`.`index` ASC".format(tb_name))
         self.cursor.execute(sel)
         res=self.cursor.fetchall()
+        dat=self._removeNull(res)
+        return dat
+    def _removeNull(self,res):
+        '''remove nulls and convert it to pyhonic nan's'''
         dat=np.zeros(np.shape(res),dtype=float)
         assert len(dat) > 0, "no data were taken from SELECT"
         with np.nditer(dat,flags=['multi_index'],op_flags=['readwrite']) as it:
@@ -307,12 +314,12 @@ forks={'0bar':{'path1':["CF_0bar_01.dat","CF_0bar_02.dat","CF_0bar_03.dat"],
         
         
 #A=sql_create(conf)
-##A.select_col(['index','Q'],'tb_n')
-##A.connect_loc(conf_loc)
-##A.connect_f(conf)
-#res=A.select_col(['Tmc'],'hec_22bar')
-##A.drop_f(forks)
-##for k,v in forks.items():
-##    A.create_table(v['tables'][0],v['tables'][1])
-##    A.insert_tables(v)
+###A.select_col(['index','Q'],'tb_n')
+###A.connect_loc(conf_loc)
+###A.connect_f(conf)
+##res=A.select_col(['Tmc'],'hec_22bar')
+#A.drop_f(forks)
+#for k,v in forks.items():
+#    A.create_table(v['tables'][0],v['tables'][1])
+#    A.insert_tables(v)
 #A.close_f()

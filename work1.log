@@ -1,0 +1,76 @@
+INFO:root: 2018-12-04 23:45:22 Ran with args: (Pulse analysis class , {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:45:22 Ran with args: (Pulse analysis class ,), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:45:22 Ran with args: (Pulse analysis class , ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:45:23 Ran with args: (Pulse analysis class , ['time', 'Q', 'Tmc', 'index', 'pulse'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:45:24 Ran with args: (Pulse analysis class ,), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:45:24 Ran with args: (Pulse analysis class ,), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:46:38 Ran with args: (Pulse analysis class , {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:46:38 Ran with args: (Pulse analysis class ,), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:46:38 Ran with args: (Pulse analysis class , ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:46:39 Ran with args: (Pulse analysis class , ['time', 'Q', 'Tmc', 'index', 'pulse'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:46:40 Ran with args: (Pulse analysis class ,), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:46:40 Ran with args: (Pulse analysis class ,), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:55:50 Ran with args: (Pulse analysis class, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:55:50 Ran with args: (Pulse analysis class,), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:55:50 Ran with args: (Pulse analysis class, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:55:51 Ran with args: (Pulse analysis class, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:55:52 Ran with args: (Pulse analysis class,), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:55:52 Ran with args: (Pulse analysis class,), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:56:51 Ran with args: (Pulse analysis class, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:56:51 Ran with args: (Pulse analysis class,), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:56:51 Ran with args: (Pulse analysis class, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:56:52 Ran with args: (Pulse analysis class, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:56:52 Ran with args: (Pulse analysis class,), and kwargs: {} 
+
+INFO:root: 2018-12-04 23:56:53 Ran with args: (Pulse analysis class,), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:11:40 Ran with args: (Pulse analysis, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:11:40 Ran with args: (Pulse analysis,), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:11:40 Ran with args: (Pulse analysis, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:11:41 Ran with args: (Pulse analysis, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:11:41 Ran with args: (Pulse analysis,), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:11:41 Ran with args: (Pulse analysis,), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:11:42 Ran with args: (Pulse analysis,), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:16:56 Ran with args: (Pulse analysis, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:16:56 Ran with args: (Pulse analysis,), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:16:56 Ran with args: (Pulse analysis, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:16:57 Ran with args: (Pulse analysis, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:16:58 Ran with args: (Pulse analysis,), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:16:58 Ran with args: (Pulse analysis,), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:16:58 Ran with args: (Pulse analysis,), and kwargs: {} 
+

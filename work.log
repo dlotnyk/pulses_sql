@@ -54,3 +54,115 @@ INFO:root: 2018-11-13 22:30:36 Ran with args: (<__main__.sql_create object at 0x
 
 INFO:root: 2018-11-13 22:30:41 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>,), and kwargs: {} 
 
+INFO:root: 2018-12-05 00:07:51 Ran with args: (Createdata SQL, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:07:51 Ran with args: (Createdata SQL,), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:07:51 Ran with args: (Createdata SQL, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:07:51 Ran with args: (Createdata SQL,), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:08:44 Ran with args: (Createdata SQL. db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:08:44 Ran with args: (Createdata SQL. db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:08:44 Ran with args: (Createdata SQL. db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-05 00:08:44 Ran with args: (Createdata SQL. db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, 'table1', 'table2'), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, 'table'), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s,), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, 'table1', 'table2'), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:35 Ran with args: (Createdata SQL. db: test_s, [2, 3, 'a']), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:35 Ran with args: (Createdata SQL. db: test_s,), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:35 Ran with args: (Createdata SQL. db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:35 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:35 Ran with args: (Createdata SQL. db: test_s, 'table1', 'table2'), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:36 Ran with args: (Createdata SQL. db: test_s, {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:42 Ran with args: (Createdata SQL. db: test_s, ['time', 'Tmc'], 'table2'), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:42 Ran with args: (Createdata SQL. db: test_s, (1, 2, 3), 'table2'), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:42 Ran with args: (Createdata SQL. db: test_s,), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:42 Ran with args: (Createdata SQL. db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:42 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:42 Ran with args: (Createdata SQL. db: test_s, 'table1', 'table2'), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:42 Ran with args: (Createdata SQL. db: test_s, 0, 'table2'), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:51:42 Ran with args: (Createdata SQL. db: test_s,), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, 'table1', 'table2'), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, 'table'), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s,), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, 'table1', 'table2'), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:49 Ran with args: (Createdata SQL. db: test_s, [2, 3, 'a']), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:49 Ran with args: (Createdata SQL. db: test_s,), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:49 Ran with args: (Createdata SQL. db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:49 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:49 Ran with args: (Createdata SQL. db: test_s, 'table1', 'table2'), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:49 Ran with args: (Createdata SQL. db: test_s, {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:54 Ran with args: (Createdata SQL. db: test_s, ['time', 'Tmc'], 'table2'), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:54 Ran with args: (Createdata SQL. db: test_s, (1, 2, 3), 'table2'), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:54 Ran with args: (Createdata SQL. db: test_s,), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:54 Ran with args: (Createdata SQL. db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:54 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:54 Ran with args: (Createdata SQL. db: test_s, 'table1', 'table2'), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:54 Ran with args: (Createdata SQL. db: test_s, 0, 'table2'), and kwargs: {} 
+
+INFO:root: 2018-12-05 15:56:54 Ran with args: (Createdata SQL. db: test_s,), and kwargs: {} 
+
