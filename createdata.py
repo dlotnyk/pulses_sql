@@ -14,46 +14,56 @@ import numpy as np
 from mysql.connector import errorcode
 from functools import wraps
 import sqlite3 as lite
+import inspect
+
+#-------------------------------------------------------------
+def time_this(original_function):  
+    '''Measures the processing time. Decorator'''
+    @wraps(original_function)                      
+    def new_function(*args,**kwargs):    
+        import time       
+        before = time.time()                     
+        x = original_function(*args,**kwargs)                
+        after = time.time()                      
+        print ("Elapsed Time of fun {0} = {1}".format(original_function.__name__,after-before))      
+        return x                                             
+    return new_function  
+def my_logger(orig_func):
+    '''Decorate function to write into log on the level ERROR'''
+    import logging
+    import datetime
+    logging.getLogger('').handlers = []
+    logging.basicConfig(filename='work.log'.format(orig_func.__name__), level=logging.INFO)
+#    method=inspect.getmembers(orig_func.__name__)
+#    print(method)
+    @wraps(orig_func)
+    def wrapper(*args,**kwargs):
+        
+#        method = inspect.stack()[1][2]
+        frm = str(inspect.stack()[1][0])
+        ff1=str(frm.split(' code ')[1])
+        ff2=str(ff1.split('>')[0])
+        dt=datetime.datetime.now()
+        dt_str=str(dt)
+        vrema=dt_str.split('.')[0]
+        logging.info(
+                ' {} Ran with args: {}, {}, and kwargs: {} \n'.format(vrema, args, ff2, kwargs))
+        return orig_func(*args, **kwargs) 
+    return wrapper 
+#-------------------------------------------------------------
 class sql_create():
     '''create data for pulses'''
     
     tc={'0bar':0.929,'9psi':1.013,'22bar':2.293} # list of Tc for experiments
     tables={'0bar':('hec_0bar','ic_0bar'),'9psi':('hec_9psi','ic_9psi'),'22bar':('hec_22bar','ic_22bar')}
+    
     def __init__(self,conf):
         self.conf=conf
         self.connect_f(conf)
+        
     def __repr__(self):
-        return "Createdata SQL. db: {}".format(self.conf['database'])
-        
-    def time_this(original_function):  
-        '''Measures the processing time. Decorator'''
-        @wraps(original_function)                      
-        def new_function(*args,**kwargs):    
-            import time       
-            before = time.time()                     
-            x = original_function(*args,**kwargs)                
-            after = time.time()                      
-            print ("Elapsed Time of fun {0} = {1}".format(original_function.__name__,after-before))      
-            return x                                             
-        return new_function  
+        return "{}, db: {}".format(self.__class__.__name__,self.conf['database'])
 
-    def my_logger(orig_func):
-        '''Decorate function to write into log on the level ERROR'''
-        import logging
-        import datetime
-        logging.getLogger('').handlers = []
-        logging.basicConfig(filename='work.log'.format(orig_func.__name__), level=logging.INFO)
-        
-        @wraps(orig_func)
-        def wrapper(*args,**kwargs):
-            dt=datetime.datetime.now()
-            dt_str=str(dt)
-            vrema=dt_str.split('.')[0]
-            logging.info(
-                    ' {} Ran with args: {}, and kwargs: {} \n'.format(vrema, args, kwargs))
-            return orig_func(*args, **kwargs) 
-        return wrapper 
-    
     @my_logger  
     @time_this
     def connect_f(self,conf):
@@ -229,19 +239,21 @@ class sql_create():
             val=data1[:,kk]
             val21=data2[:,kk]
             val11=[]
-            for ii in val:
-                if np.isnan(ii):
-                    val11.append('NULL')
-                else:
-                    val11.append(str(ii))
+            val11=['NULL' if np.isnan(ii) else str(ii) for ii in val]
+#            for ii in val:
+#                if np.isnan(ii):
+#                    val11.append('NULL')
+#                else:
+#                    val11.append(str(ii))
             val11.append(counter)
             val1=tuple(map(str,val11))
             val22=[]
-            for jj in val21:
-                if np.isnan(jj):
-                    val22.append('NULL')
-                else:
-                    val22.append(str(jj))
+            val22=['NULL' if np.isnan(jj) else str(jj) for jj in val21]
+#            for jj in val21:
+#                if np.isnan(jj):
+#                    val22.append('NULL')
+#                else:
+#                    val22.append(str(jj))
             val22.append(counter)
             val2=tuple(map(str,val22))
             self.__insert_sql(d_value['tables'][0],d_value['tables'][1],val1,val2)
@@ -278,6 +290,9 @@ class sql_create():
         res=self.cursor.fetchall()
         dat=self._removeNull(res)
         return dat
+    
+#    @my_logger  
+    @time_this 
     def _removeNull(self,res):
         '''remove nulls and convert it to pyhonic nan's'''
         dat=np.zeros(np.shape(res),dtype=float)
@@ -312,7 +327,7 @@ forks={'0bar':{'path1':["CF_0bar_01.dat","CF_0bar_02.dat","CF_0bar_03.dat"],
                 }           
        }
         
-        
+#        
 #A=sql_create(conf)
 ###A.select_col(['index','Q'],'tb_n')
 ###A.connect_loc(conf_loc)

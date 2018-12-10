@@ -1,168 +1,1281 @@
-INFO:root:Ran with args: ({'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True},), and kwargs: {}
-INFO:root:Ran with args: (), and kwargs: {}
-INFO:root:Ran with args: (<__main__.sql_create object at 0x000001DDD3658DD8>, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {}
-INFO:root:2018-11-13 21:59:30 Ran with args: (<__main__.sql_create object at 0x000001DDD3707588>, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {}
-INFO:root: 2018-11-13 22:07:53 Ran with args: (<__main__.sql_create object at 0x000001DDD3707C50>, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {}
-INFO:root: 2018-11-13 22:07:53 Ran with args: (<__main__.sql_create object at 0x000001DDD3707C50>, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), and kwargs: {}
-INFO:root: 2018-11-13 22:07:53 Ran with args: (<__main__.sql_create object at 0x000001DDD3707C50>, 'hec_0bar', 'ic_0bar'), and kwargs: {}
-INFO:root: 2018-11-13 22:07:54 Ran with args: (<__main__.sql_create object at 0x000001DDD3707C50>, 'hec_9psi', 'ic_9psi'), and kwargs: {}
-INFO:root: 2018-11-13 22:07:54 Ran with args: (<__main__.sql_create object at 0x000001DDD3707C50>, 'hec_22bar', 'ic_22bar'), and kwargs: {}
-INFO:root: 2018-11-13 22:07:54 Ran with args: (<__main__.sql_create object at 0x000001DDD3707C50>,), and kwargs: {}
-INFO:root: 2018-11-13 22:11:11 Ran with args: (<__main__.sql_create object at 0x000001DDD37182E8>, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+INFO:root: 2018-12-06 11:33:53 Ran with args: (Pulse analysis 0bar db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:11:11 Ran with args: (<__main__.sql_create object at 0x000001DDD37182E8>, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), and kwargs: {} 
+INFO:root: 2018-12-06 11:33:53 Ran with args: (Pulse analysis 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:11:11 Ran with args: (<__main__.sql_create object at 0x000001DDD37182E8>, 'hec_0bar', 'ic_0bar'), and kwargs: {} 
+INFO:root: 2018-12-06 11:33:53 Ran with args: (Pulse analysis 0bar db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:11:11 Ran with args: (<__main__.sql_create object at 0x000001DDD37182E8>, 'hec_9psi', 'ic_9psi'), and kwargs: {} 
+INFO:root: 2018-12-06 11:33:54 Ran with args: (Pulse analysis 0bar db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'ic_0bar'), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:11:11 Ran with args: (<__main__.sql_create object at 0x000001DDD37182E8>, 'hec_22bar', 'ic_22bar'), and kwargs: {} 
+INFO:root: 2018-12-06 11:33:55 Ran with args: (Pulse analysis 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:11:11 Ran with args: (<__main__.sql_create object at 0x000001DDD37182E8>,), and kwargs: {} 
+INFO:root: 2018-12-06 11:33:55 Ran with args: (Pulse analysis 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:27:38 Ran with args: (<__main__.sql_create object at 0x000001DDD3719470>, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+INFO:root: 2018-12-06 12:47:34 Ran with args: (Pulse analysis 0bar db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:27:38 Ran with args: (<__main__.sql_create object at 0x000001DDD3719470>, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), and kwargs: {} 
+INFO:root: 2018-12-06 12:47:34 Ran with args: (Pulse analysis 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:27:38 Ran with args: (<__main__.sql_create object at 0x000001DDD3719470>, 'hec_0bar', 'ic_0bar'), and kwargs: {} 
+INFO:root: 2018-12-06 12:47:34 Ran with args: (Pulse analysis 0bar db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:27:38 Ran with args: (<__main__.sql_create object at 0x000001DDD3719470>, 'hec_9psi', 'ic_9psi'), and kwargs: {} 
+INFO:root: 2018-12-06 12:47:35 Ran with args: (Pulse analysis 0bar db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'ic_0bar'), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:27:38 Ran with args: (<__main__.sql_create object at 0x000001DDD3719470>, 'hec_22bar', 'ic_22bar'), and kwargs: {} 
+INFO:root: 2018-12-06 12:47:36 Ran with args: (Pulse analysis 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:27:38 Ran with args: (<__main__.sql_create object at 0x000001DDD3719470>,), and kwargs: {} 
+INFO:root: 2018-12-06 12:47:36 Ran with args: (Pulse analysis 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:28:40 Ran with args: (<__main__.sql_create object at 0x000001DDD3719908>, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+INFO:root: 2018-12-06 12:47:36 Ran with args: (Pulse analysis 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:28:40 Ran with args: (<__main__.sql_create object at 0x000001DDD3719908>, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), and kwargs: {} 
+INFO:root: 2018-12-06 12:49:55 Ran with args: (Pulse analysis 0bar db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:30:08 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+INFO:root: 2018-12-06 12:49:55 Ran with args: (Pulse analysis 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:30:08 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), and kwargs: {} 
+INFO:root: 2018-12-06 12:49:55 Ran with args: (Pulse analysis 0bar db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:30:08 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>, 'hec_0bar', 'ic_0bar'), and kwargs: {} 
+INFO:root: 2018-12-06 12:49:56 Ran with args: (Pulse analysis 0bar db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'ic_0bar'), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:30:08 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>, {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}), and kwargs: {} 
+INFO:root: 2018-12-06 12:49:57 Ran with args: (Pulse analysis 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:30:22 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>, 'hec_9psi', 'ic_9psi'), and kwargs: {} 
+INFO:root: 2018-12-06 12:49:57 Ran with args: (Pulse analysis 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:30:22 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>, {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}), and kwargs: {} 
+INFO:root: 2018-12-06 12:49:57 Ran with args: (Pulse analysis 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:30:36 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>, 'hec_22bar', 'ic_22bar'), and kwargs: {} 
+INFO:root: 2018-12-06 14:33:10 Ran with args: (Createdata SQL. db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:30:36 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>, {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}), and kwargs: {} 
+INFO:root: 2018-12-06 14:33:10 Ran with args: (Createdata SQL. db: pulses_he3, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), and kwargs: {} 
 
-INFO:root: 2018-11-13 22:30:41 Ran with args: (<__main__.sql_create object at 0x000001DDD3799F28>,), and kwargs: {} 
+INFO:root: 2018-12-06 14:33:10 Ran with args: (Createdata SQL. db: pulses_he3, 'hec_0bar', 'ic_0bar'), and kwargs: {} 
 
-INFO:root: 2018-12-05 00:07:51 Ran with args: (Createdata SQL, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+INFO:root: 2018-12-06 14:33:10 Ran with args: (Createdata SQL. db: pulses_he3, {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}), and kwargs: {} 
 
-INFO:root: 2018-12-05 00:07:51 Ran with args: (Createdata SQL,), and kwargs: {} 
+INFO:root: 2018-12-06 14:33:23 Ran with args: (Createdata SQL. db: pulses_he3, 'hec_9psi', 'ic_9psi'), and kwargs: {} 
 
-INFO:root: 2018-12-05 00:07:51 Ran with args: (Createdata SQL, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+INFO:root: 2018-12-06 14:33:23 Ran with args: (Createdata SQL. db: pulses_he3, {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}), and kwargs: {} 
 
-INFO:root: 2018-12-05 00:07:51 Ran with args: (Createdata SQL,), and kwargs: {} 
+INFO:root: 2018-12-06 14:33:37 Ran with args: (Createdata SQL. db: pulses_he3, 'hec_22bar', 'ic_22bar'), and kwargs: {} 
 
-INFO:root: 2018-12-05 00:08:44 Ran with args: (Createdata SQL. db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+INFO:root: 2018-12-06 14:33:37 Ran with args: (Createdata SQL. db: pulses_he3, {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}), and kwargs: {} 
 
-INFO:root: 2018-12-05 00:08:44 Ran with args: (Createdata SQL. db: pulses_he3,), and kwargs: {} 
+INFO:root: 2018-12-06 14:33:41 Ran with args: (Createdata SQL. db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 00:08:44 Ran with args: (Createdata SQL. db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+INFO:root: 2018-12-06 14:33:41 Ran with args: (Createdata SQL. db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
 
-INFO:root: 2018-12-05 00:08:44 Ran with args: (Createdata SQL. db: pulses_he3,), and kwargs: {} 
+INFO:root: 2018-12-06 14:33:41 Ran with args: (Createdata SQL. db: pulses_he3, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), and kwargs: {} 
+INFO:root: 2018-12-06 14:33:41 Ran with args: (Createdata SQL. db: pulses_he3, 'hec_0bar', 'ic_0bar'), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+INFO:root: 2018-12-06 14:33:41 Ran with args: (Createdata SQL. db: pulses_he3, {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, 'table1', 'table2'), and kwargs: {} 
+INFO:root: 2018-12-06 14:33:55 Ran with args: (Createdata SQL. db: pulses_he3, 'hec_9psi', 'ic_9psi'), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, 'table'), and kwargs: {} 
+INFO:root: 2018-12-06 14:33:55 Ran with args: (Createdata SQL. db: pulses_he3, {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+INFO:root: 2018-12-06 14:34:08 Ran with args: (Createdata SQL. db: pulses_he3, 'hec_22bar', 'ic_22bar'), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s,), and kwargs: {} 
+INFO:root: 2018-12-06 14:34:08 Ran with args: (Createdata SQL. db: pulses_he3, {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), and kwargs: {} 
+INFO:root: 2018-12-06 14:34:13 Ran with args: (Createdata SQL. db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+INFO:root: 2018-12-06 14:36:12 Ran with args: (Pulse analysis 0bar db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, 'table1', 'table2'), and kwargs: {} 
+INFO:root: 2018-12-06 14:36:12 Ran with args: (Pulse analysis 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:30 Ran with args: (Createdata SQL. db: test_s, {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}), and kwargs: {} 
+INFO:root: 2018-12-06 14:36:12 Ran with args: (Pulse analysis 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:35 Ran with args: (Createdata SQL. db: test_s, [2, 3, 'a']), and kwargs: {} 
+INFO:root: 2018-12-06 14:36:12 Ran with args: (Pulse analysis 0bar db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:35 Ran with args: (Createdata SQL. db: test_s,), and kwargs: {} 
+INFO:root: 2018-12-06 14:36:13 Ran with args: (Pulse analysis 0bar db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'ic_0bar'), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:35 Ran with args: (Createdata SQL. db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), and kwargs: {} 
+INFO:root: 2018-12-06 14:36:14 Ran with args: (Pulse analysis 0bar db: pulses_he3, array([[0.0000000e+00, 4.0000000e+00, 8.0000000e+00, ..., 1.5972300e+05,
+        1.5972700e+05, 1.5973100e+05],
+       [9.5690910e+01, 9.8427070e+01, 9.7407100e+01, ..., 9.6396930e+00,
+        1.0520610e+01, 8.4334370e+00],
+       [          nan,           nan,           nan, ..., 8.4674917e-01,
+        9.0841671e-01, 9.0841671e-01],
+       [9.2010000e+03, 9.2020000e+03, 9.2030000e+03, ..., 4.6998000e+04,
+        4.6999000e+04, 4.7000000e+04],
+       [9.2000000e+03, 9.2010000e+03, 9.2020000e+03, ..., 4.6997000e+04,
+        4.6998000e+04, 4.6999000e+04]]), array([[ 0.0000000e+00,  4.0000000e+00,  8.0000000e+00, ...,
+         1.5972300e+05,  1.5972700e+05,  1.5973100e+05],
+       [ 8.9324690e+01,  8.9536590e+01,  8.9218400e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2010000e+03,  9.2020000e+03,  9.2030000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 9.2000000e+03,  9.2010000e+03,  9.2020000e+03, ...,
+         4.6997000e+04,  4.6998000e+04,  4.6999000e+04]])), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:35 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+INFO:root: 2018-12-06 14:36:14 Ran with args: (Pulse analysis 0bar db: pulses_he3, array([[ 0.0000000e+00,  4.0000000e+00,  8.0000000e+00, ...,
+         1.5972300e+05,  1.5972700e+05,  1.5973100e+05],
+       [ 8.9324690e+01,  8.9536590e+01,  8.9218400e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2010000e+03,  9.2020000e+03,  9.2030000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 9.2000000e+03,  9.2010000e+03,  9.2020000e+03, ...,
+         4.6997000e+04,  4.6998000e+04,  4.6999000e+04]])), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:35 Ran with args: (Createdata SQL. db: test_s, 'table1', 'table2'), and kwargs: {} 
+INFO:root: 2018-12-06 14:36:20 Ran with args: (Pulse analysis 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:36 Ran with args: (Createdata SQL. db: test_s, {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}), and kwargs: {} 
+INFO:root: 2018-12-06 14:50:28 Ran with args: (timetotemp 0bar db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:42 Ran with args: (Createdata SQL. db: test_s, ['time', 'Tmc'], 'table2'), and kwargs: {} 
+INFO:root: 2018-12-06 14:50:28 Ran with args: (timetotemp 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:42 Ran with args: (Createdata SQL. db: test_s, (1, 2, 3), 'table2'), and kwargs: {} 
+INFO:root: 2018-12-06 14:50:29 Ran with args: (timetotemp 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:42 Ran with args: (Createdata SQL. db: test_s,), and kwargs: {} 
+INFO:root: 2018-12-06 14:50:29 Ran with args: (timetotemp 0bar db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:42 Ran with args: (Createdata SQL. db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), and kwargs: {} 
+INFO:root: 2018-12-06 14:56:14 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:42 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+INFO:root: 2018-12-06 14:56:14 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:42 Ran with args: (Createdata SQL. db: test_s, 'table1', 'table2'), and kwargs: {} 
+INFO:root: 2018-12-06 14:56:15 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:42 Ran with args: (Createdata SQL. db: test_s, 0, 'table2'), and kwargs: {} 
+INFO:root: 2018-12-06 14:56:58 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:51:42 Ran with args: (Createdata SQL. db: test_s,), and kwargs: {} 
+INFO:root: 2018-12-06 14:56:58 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), and kwargs: {} 
+INFO:root: 2018-12-06 14:56:59 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+INFO:root: 2018-12-06 14:56:59 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, 'table1', 'table2'), and kwargs: {} 
+INFO:root: 2018-12-06 14:59:18 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, 'table'), and kwargs: {} 
+INFO:root: 2018-12-06 14:59:18 Ran with args: (timetotemp 0bar, db: pulses_he3, ['index', 'time', 'Q', 'Tmc', 'pulse'], 'hec_0bar'), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+INFO:root: 2018-12-06 14:59:18 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s,), and kwargs: {} 
+INFO:root: 2018-12-06 14:59:18 Ran with args: (timetotemp 0bar, db: pulses_he3, ['index', 'time', 'Q', 'Tmc'], 'ic_0bar'), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), and kwargs: {} 
+INFO:root: 2018-12-06 14:59:18 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+INFO:root: 2018-12-06 14:59:19 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, 'table1', 'table2'), and kwargs: {} 
+INFO:root: 2018-12-06 15:06:53 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:43 Ran with args: (Createdata SQL. db: test_s, {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}), and kwargs: {} 
+INFO:root: 2018-12-06 15:06:53 Ran with args: (timetotemp 0bar, db: pulses_he3, ['index', 'time', 'Q', 'Tmc', 'pulse'], 'hec_0bar'), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:49 Ran with args: (Createdata SQL. db: test_s, [2, 3, 'a']), and kwargs: {} 
+INFO:root: 2018-12-06 15:06:53 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:49 Ran with args: (Createdata SQL. db: test_s,), and kwargs: {} 
+INFO:root: 2018-12-06 15:06:53 Ran with args: (timetotemp 0bar, db: pulses_he3, ['index', 'time', 'Q', 'Tmc'], 'ic_0bar'), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:49 Ran with args: (Createdata SQL. db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), and kwargs: {} 
+INFO:root: 2018-12-06 15:06:53 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:49 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+INFO:root: 2018-12-06 15:06:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:49 Ran with args: (Createdata SQL. db: test_s, 'table1', 'table2'), and kwargs: {} 
+INFO:root: 2018-12-06 15:36:07 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:49 Ran with args: (Createdata SQL. db: test_s, {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}), and kwargs: {} 
+INFO:root: 2018-12-06 15:36:07 Ran with args: (timetotemp 0bar, db: pulses_he3, ['index', 'time', 'Q', 'Tmc', 'pulse'], 'hec_0bar'), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:54 Ran with args: (Createdata SQL. db: test_s, ['time', 'Tmc'], 'table2'), and kwargs: {} 
+INFO:root: 2018-12-06 15:36:07 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:54 Ran with args: (Createdata SQL. db: test_s, (1, 2, 3), 'table2'), and kwargs: {} 
+INFO:root: 2018-12-06 15:36:07 Ran with args: (timetotemp 0bar, db: pulses_he3, ['index', 'time', 'Q', 'Tmc'], 'ic_0bar'), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:54 Ran with args: (Createdata SQL. db: test_s,), and kwargs: {} 
+INFO:root: 2018-12-06 15:36:07 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:54 Ran with args: (Createdata SQL. db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), and kwargs: {} 
+INFO:root: 2018-12-06 15:36:08 Ran with args: (timetotemp 0bar, db: pulses_he3, 10, 30, array([[9.20200000e+03, 9.20300000e+03, 9.20400000e+03, ...,
+        4.69980000e+04, 4.69990000e+04, 4.70000000e+04],
+       [3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98548000e+05, 1.98552000e+05, 1.98556000e+05],
+       [9.84270700e+01, 9.74071000e+01, 9.76674900e+01, ...,
+        9.63969300e+00, 1.05206100e+01, 8.43343700e+00],
+       [           nan,            nan,            nan, ...,
+        8.46749170e-01, 9.08416710e-01, 9.08416710e-01],
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.26750000e+05, 1.26833333e+05, 1.26916667e+05]]), array([[ 9.2020000e+03,  9.2030000e+03,  9.2040000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 3.8829000e+04,  3.8833000e+04,  3.8838000e+04, ...,
+         1.9854800e+05,  1.9855200e+05,  1.9855600e+05],
+       [ 8.9536590e+01,  8.9218400e+01,  8.9617860e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01]])), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:54 Ran with args: (Createdata SQL. db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), and kwargs: {} 
+INFO:root: 2018-12-06 15:37:58 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:54 Ran with args: (Createdata SQL. db: test_s, 'table1', 'table2'), and kwargs: {} 
+INFO:root: 2018-12-06 15:37:58 Ran with args: (timetotemp 0bar, db: pulses_he3, ['index', 'time', 'Q', 'Tmc', 'pulse'], 'hec_0bar'), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:54 Ran with args: (Createdata SQL. db: test_s, 0, 'table2'), and kwargs: {} 
+INFO:root: 2018-12-06 15:37:58 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
 
-INFO:root: 2018-12-05 15:56:54 Ran with args: (Createdata SQL. db: test_s,), and kwargs: {} 
+INFO:root: 2018-12-06 15:37:58 Ran with args: (timetotemp 0bar, db: pulses_he3, ['index', 'time', 'Q', 'Tmc'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:37:58 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:37:59 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[9.20200000e+03, 9.20300000e+03, 9.20400000e+03, ...,
+        4.69980000e+04, 4.69990000e+04, 4.70000000e+04],
+       [3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98548000e+05, 1.98552000e+05, 1.98556000e+05],
+       [9.84270700e+01, 9.74071000e+01, 9.76674900e+01, ...,
+        9.63969300e+00, 1.05206100e+01, 8.43343700e+00],
+       [           nan,            nan,            nan, ...,
+        8.46749170e-01, 9.08416710e-01, 9.08416710e-01],
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.26750000e+05, 1.26833333e+05, 1.26916667e+05]]), array([[ 9.2020000e+03,  9.2030000e+03,  9.2040000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 3.8829000e+04,  3.8833000e+04,  3.8838000e+04, ...,
+         1.9854800e+05,  1.9855200e+05,  1.9855600e+05],
+       [ 8.9536590e+01,  8.9218400e+01,  8.9617860e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01]])), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:37:59 Ran with args: (timetotemp 0bar, db: pulses_he3, 10, 30, array([[9.20200000e+03, 9.20300000e+03, 9.20400000e+03, ...,
+        4.69980000e+04, 4.69990000e+04, 4.70000000e+04],
+       [3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98548000e+05, 1.98552000e+05, 1.98556000e+05],
+       [9.84270700e+01, 9.74071000e+01, 9.76674900e+01, ...,
+        9.63969300e+00, 1.05206100e+01, 8.43343700e+00],
+       [           nan,            nan,            nan, ...,
+        8.46749170e-01, 9.08416710e-01, 9.08416710e-01],
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.26750000e+05, 1.26833333e+05, 1.26916667e+05]]), array([[ 9.2020000e+03,  9.2030000e+03,  9.2040000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 3.8829000e+04,  3.8833000e+04,  3.8838000e+04, ...,
+         1.9854800e+05,  1.9855200e+05,  1.9855600e+05],
+       [ 8.9536590e+01,  8.9218400e+01,  8.9617860e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01]])), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:37:59 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:45:42 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:45:42 Ran with args: (timetotemp 0bar, db: pulses_he3, ['index', 'time', 'Q', 'Tmc', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:45:42 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:45:43 Ran with args: (timetotemp 0bar, db: pulses_he3, ['index', 'time', 'Q', 'Tmc'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:45:43 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:45:43 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[9.20200000e+03, 9.20300000e+03, 9.20400000e+03, ...,
+        4.69980000e+04, 4.69990000e+04, 4.70000000e+04],
+       [3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98548000e+05, 1.98552000e+05, 1.98556000e+05],
+       [9.84270700e+01, 9.74071000e+01, 9.76674900e+01, ...,
+        9.63969300e+00, 1.05206100e+01, 8.43343700e+00],
+       [           nan,            nan,            nan, ...,
+        8.46749170e-01, 9.08416710e-01, 9.08416710e-01],
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.26750000e+05, 1.26833333e+05, 1.26916667e+05]]), array([[ 9.2020000e+03,  9.2030000e+03,  9.2040000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 3.8829000e+04,  3.8833000e+04,  3.8838000e+04, ...,
+         1.9854800e+05,  1.9855200e+05,  1.9855600e+05],
+       [ 8.9536590e+01,  8.9218400e+01,  8.9617860e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01]])), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:45:43 Ran with args: (timetotemp 0bar, db: pulses_he3, 10, 30, array([[9.20200000e+03, 9.20300000e+03, 9.20400000e+03, ...,
+        4.69980000e+04, 4.69990000e+04, 4.70000000e+04],
+       [3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98548000e+05, 1.98552000e+05, 1.98556000e+05],
+       [9.84270700e+01, 9.74071000e+01, 9.76674900e+01, ...,
+        9.63969300e+00, 1.05206100e+01, 8.43343700e+00],
+       [           nan,            nan,            nan, ...,
+        8.46749170e-01, 9.08416710e-01, 9.08416710e-01],
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.26750000e+05, 1.26833333e+05, 1.26916667e+05]]), array([[ 9.2020000e+03,  9.2030000e+03,  9.2040000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 3.8829000e+04,  3.8833000e+04,  3.8838000e+04, ...,
+         1.9854800e+05,  1.9855200e+05,  1.9855600e+05],
+       [ 8.9536590e+01,  8.9218400e+01,  8.9617860e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01]])), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:45:44 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:50:20 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:50:20 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:50:20 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:50:20 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:50:20 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:50:21 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98548000e+05, 1.98552000e+05, 1.98556000e+05],
+       [9.84270700e+01, 9.74071000e+01, 9.76674900e+01, ...,
+        9.63969300e+00, 1.05206100e+01, 8.43343700e+00],
+       [           nan,            nan,            nan, ...,
+        8.46749170e-01, 9.08416710e-01, 9.08416710e-01],
+       [9.20200000e+03, 9.20300000e+03, 9.20400000e+03, ...,
+        4.69980000e+04, 4.69990000e+04, 4.70000000e+04],
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.26750000e+05, 1.26833333e+05, 1.26916667e+05]]), array([[ 3.8829000e+04,  3.8833000e+04,  3.8838000e+04, ...,
+         1.9854800e+05,  1.9855200e+05,  1.9855600e+05],
+       [ 8.9536590e+01,  8.9218400e+01,  8.9617860e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2020000e+03,  9.2030000e+03,  9.2040000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04]])), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:50:21 Ran with args: (timetotemp 0bar, db: pulses_he3, 10, 30, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98548000e+05, 1.98552000e+05, 1.98556000e+05],
+       [9.84270700e+01, 9.74071000e+01, 9.76674900e+01, ...,
+        9.63969300e+00, 1.05206100e+01, 8.43343700e+00],
+       [           nan,            nan,            nan, ...,
+        8.46749170e-01, 9.08416710e-01, 9.08416710e-01],
+       [9.20200000e+03, 9.20300000e+03, 9.20400000e+03, ...,
+        4.69980000e+04, 4.69990000e+04, 4.70000000e+04],
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.26750000e+05, 1.26833333e+05, 1.26916667e+05]]), array([[ 3.8829000e+04,  3.8833000e+04,  3.8838000e+04, ...,
+         1.9854800e+05,  1.9855200e+05,  1.9855600e+05],
+       [ 8.9536590e+01,  8.9218400e+01,  8.9617860e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2020000e+03,  9.2030000e+03,  9.2040000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04]])), and kwargs: {} 
+
+INFO:root: 2018-12-06 15:50:21 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 17:50:42 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-06 17:50:42 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 17:50:42 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 17:50:43 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 17:50:43 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 17:50:43 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98548000e+05, 1.98552000e+05, 1.98556000e+05],
+       [9.84270700e+01, 9.74071000e+01, 9.76674900e+01, ...,
+        9.63969300e+00, 1.05206100e+01, 8.43343700e+00],
+       [           nan,            nan,            nan, ...,
+        8.46749170e-01, 9.08416710e-01, 9.08416710e-01],
+       [9.20200000e+03, 9.20300000e+03, 9.20400000e+03, ...,
+        4.69980000e+04, 4.69990000e+04, 4.70000000e+04],
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.26750000e+05, 1.26833333e+05, 1.26916667e+05]]), array([[ 3.8829000e+04,  3.8833000e+04,  3.8838000e+04, ...,
+         1.9854800e+05,  1.9855200e+05,  1.9855600e+05],
+       [ 8.9536590e+01,  8.9218400e+01,  8.9617860e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2020000e+03,  9.2030000e+03,  9.2040000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04]])), and kwargs: {} 
+
+INFO:root: 2018-12-06 17:50:43 Ran with args: (timetotemp 0bar, db: pulses_he3, 10, 30, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98548000e+05, 1.98552000e+05, 1.98556000e+05],
+       [9.84270700e+01, 9.74071000e+01, 9.76674900e+01, ...,
+        9.63969300e+00, 1.05206100e+01, 8.43343700e+00],
+       [           nan,            nan,            nan, ...,
+        8.46749170e-01, 9.08416710e-01, 9.08416710e-01],
+       [9.20200000e+03, 9.20300000e+03, 9.20400000e+03, ...,
+        4.69980000e+04, 4.69990000e+04, 4.70000000e+04],
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.26750000e+05, 1.26833333e+05, 1.26916667e+05]]), array([[ 3.8829000e+04,  3.8833000e+04,  3.8838000e+04, ...,
+         1.9854800e+05,  1.9855200e+05,  1.9855600e+05],
+       [ 8.9536590e+01,  8.9218400e+01,  8.9617860e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2020000e+03,  9.2030000e+03,  9.2040000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04]])), and kwargs: {} 
+
+INFO:root: 2018-12-06 17:50:44 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:52:01 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:52:01 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:52:01 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:52:01 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:52:01 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:52:02 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98548000e+05, 1.98552000e+05, 1.98556000e+05],
+       [9.84270700e+01, 9.74071000e+01, 9.76674900e+01, ...,
+        9.63969300e+00, 1.05206100e+01, 8.43343700e+00],
+       [           nan,            nan,            nan, ...,
+        8.46749170e-01, 9.08416710e-01, 9.08416710e-01],
+       [9.20200000e+03, 9.20300000e+03, 9.20400000e+03, ...,
+        4.69980000e+04, 4.69990000e+04, 4.70000000e+04],
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.26750000e+05, 1.26833333e+05, 1.26916667e+05]]), array([[ 3.8829000e+04,  3.8833000e+04,  3.8838000e+04, ...,
+         1.9854800e+05,  1.9855200e+05,  1.9855600e+05],
+       [ 8.9536590e+01,  8.9218400e+01,  8.9617860e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2020000e+03,  9.2030000e+03,  9.2040000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04]])), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:52:02 Ran with args: (timetotemp 0bar, db: pulses_he3, 10, 30, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98548000e+05, 1.98552000e+05, 1.98556000e+05],
+       [9.84270700e+01, 9.74071000e+01, 9.76674900e+01, ...,
+        9.63969300e+00, 1.05206100e+01, 8.43343700e+00],
+       [           nan,            nan,            nan, ...,
+        8.46749170e-01, 9.08416710e-01, 9.08416710e-01],
+       [9.20200000e+03, 9.20300000e+03, 9.20400000e+03, ...,
+        4.69980000e+04, 4.69990000e+04, 4.70000000e+04],
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.26750000e+05, 1.26833333e+05, 1.26916667e+05]]), array([[ 3.8829000e+04,  3.8833000e+04,  3.8838000e+04, ...,
+         1.9854800e+05,  1.9855200e+05,  1.9855600e+05],
+       [ 8.9536590e+01,  8.9218400e+01,  8.9617860e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2020000e+03,  9.2030000e+03,  9.2040000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04]])), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:52:52 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:52:52 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:52:52 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:52:53 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:52:53 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:52:53 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98548000e+05, 1.98552000e+05, 1.98556000e+05],
+       [9.84270700e+01, 9.74071000e+01, 9.76674900e+01, ...,
+        9.63969300e+00, 1.05206100e+01, 8.43343700e+00],
+       [           nan,            nan,            nan, ...,
+        8.46749170e-01, 9.08416710e-01, 9.08416710e-01],
+       [9.20200000e+03, 9.20300000e+03, 9.20400000e+03, ...,
+        4.69980000e+04, 4.69990000e+04, 4.70000000e+04],
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.26750000e+05, 1.26833333e+05, 1.26916667e+05]]), array([[ 3.8829000e+04,  3.8833000e+04,  3.8838000e+04, ...,
+         1.9854800e+05,  1.9855200e+05,  1.9855600e+05],
+       [ 8.9536590e+01,  8.9218400e+01,  8.9617860e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2020000e+03,  9.2030000e+03,  9.2040000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04]])), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:52:53 Ran with args: (timetotemp 0bar, db: pulses_he3, 10, 30, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98548000e+05, 1.98552000e+05, 1.98556000e+05],
+       [9.84270700e+01, 9.74071000e+01, 9.76674900e+01, ...,
+        9.63969300e+00, 1.05206100e+01, 8.43343700e+00],
+       [           nan,            nan,            nan, ...,
+        8.46749170e-01, 9.08416710e-01, 9.08416710e-01],
+       [9.20200000e+03, 9.20300000e+03, 9.20400000e+03, ...,
+        4.69980000e+04, 4.69990000e+04, 4.70000000e+04],
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.26750000e+05, 1.26833333e+05, 1.26916667e+05]]), array([[ 3.8829000e+04,  3.8833000e+04,  3.8838000e+04, ...,
+         1.9854800e+05,  1.9855200e+05,  1.9855600e+05],
+       [ 8.9536590e+01,  8.9218400e+01,  8.9617860e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2020000e+03,  9.2030000e+03,  9.2040000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04]])), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:52:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:57:40 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:57:40 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:57:40 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:57:41 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:57:41 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:57:41 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98548000e+05, 1.98552000e+05, 1.98556000e+05],
+       [9.84270700e+01, 9.74071000e+01, 9.76674900e+01, ...,
+        9.63969300e+00, 1.05206100e+01, 8.43343700e+00],
+       [           nan,            nan,            nan, ...,
+        8.46749170e-01, 9.08416710e-01, 9.08416710e-01],
+       [9.20200000e+03, 9.20300000e+03, 9.20400000e+03, ...,
+        4.69980000e+04, 4.69990000e+04, 4.70000000e+04],
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.26750000e+05, 1.26833333e+05, 1.26916667e+05]]), array([[ 3.8829000e+04,  3.8833000e+04,  3.8838000e+04, ...,
+         1.9854800e+05,  1.9855200e+05,  1.9855600e+05],
+       [ 8.9536590e+01,  8.9218400e+01,  8.9617860e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2020000e+03,  9.2030000e+03,  9.2040000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04]])), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:57:41 Ran with args: (timetotemp 0bar, db: pulses_he3, 10, 30, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98548000e+05, 1.98552000e+05, 1.98556000e+05],
+       [9.84270700e+01, 9.74071000e+01, 9.76674900e+01, ...,
+        9.63969300e+00, 1.05206100e+01, 8.43343700e+00],
+       [           nan,            nan,            nan, ...,
+        8.46749170e-01, 9.08416710e-01, 9.08416710e-01],
+       [9.20200000e+03, 9.20300000e+03, 9.20400000e+03, ...,
+        4.69980000e+04, 4.69990000e+04, 4.70000000e+04],
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.26750000e+05, 1.26833333e+05, 1.26916667e+05]]), array([[ 3.8829000e+04,  3.8833000e+04,  3.8838000e+04, ...,
+         1.9854800e+05,  1.9855200e+05,  1.9855600e+05],
+       [ 8.9536590e+01,  8.9218400e+01,  8.9617860e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2020000e+03,  9.2030000e+03,  9.2040000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04]])), and kwargs: {} 
+
+INFO:root: 2018-12-06 19:57:42 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 20:02:19 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-06 20:02:19 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 20:02:19 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 20:02:19 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 20:02:19 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 20:02:20 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:24:24 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:24:24 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:24:24 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:24:24 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:24:24 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:24:25 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:25:37 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:25:37 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:25:37 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:25:37 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:25:37 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:25:38 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:27:43 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:27:43 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:27:43 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:27:43 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:27:44 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:27:44 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:28:13 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:28:13 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:28:13 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:28:14 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:28:14 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:28:15 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:29:06 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:29:06 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:29:06 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:29:06 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:29:06 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:29:07 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:31:58 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:31:58 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:31:58 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:31:59 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:31:59 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:31:59 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:32:13 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:32:13 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:32:13 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:32:14 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:32:14 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:32:14 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:34:26 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:34:26 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:34:26 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:34:27 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:34:27 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:34:27 Ran with args: (timetotemp 0bar, db: pulses_he3,), and kwargs: {} 
+
+INFO:root: 2018-12-06 22:36:34 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:36:34 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:36:34 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:36:35 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:36:35 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:36:36 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:53:54 Ran with args: (sql_create, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:53:54 Ran with args: (sql_create, db: pulses_he3, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:53:55 Ran with args: (sql_create, db: pulses_he3, 'hec_0bar', 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:53:55 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:54:10 Ran with args: (sql_create, db: pulses_he3, 'hec_9psi', 'ic_9psi'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:54:10 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:54:24 Ran with args: (sql_create, db: pulses_he3, 'hec_22bar', 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:54:24 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:54:29 Ran with args: (sql_create, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:54:29 Ran with args: (sql_create, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:54:29 Ran with args: (sql_create, db: pulses_he3, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:54:29 Ran with args: (sql_create, db: pulses_he3, 'hec_0bar', 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:54:29 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:54:43 Ran with args: (sql_create, db: pulses_he3, 'hec_9psi', 'ic_9psi'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:54:43 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:54:59 Ran with args: (sql_create, db: pulses_he3, 'hec_22bar', 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:54:59 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:55:04 Ran with args: (sql_create, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:57:02 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:57:02 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:57:02 Ran with args: (timetotemp 0bar, db: pulses_he3,), first_start, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:57:02 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), import_fun, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:57:03 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'ic_0bar'), import_fun, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:57:04 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[0.0000000e+00, 4.0000000e+00, 8.0000000e+00, ..., 1.5972300e+05,
+        1.5972700e+05, 1.5973100e+05],
+       [9.5690910e+01, 9.8427070e+01, 9.7407100e+01, ..., 9.6396930e+00,
+        1.0520610e+01, 8.4334370e+00],
+       [          nan,           nan,           nan, ..., 8.4674917e-01,
+        9.0841671e-01, 9.0841671e-01],
+       [9.2010000e+03, 9.2020000e+03, 9.2030000e+03, ..., 4.6998000e+04,
+        4.6999000e+04, 4.7000000e+04],
+       [9.2000000e+03, 9.2010000e+03, 9.2020000e+03, ..., 4.6997000e+04,
+        4.6998000e+04, 4.6999000e+04]]), array([[ 0.0000000e+00,  4.0000000e+00,  8.0000000e+00, ...,
+         1.5972300e+05,  1.5972700e+05,  1.5973100e+05],
+       [ 8.9324690e+01,  8.9536590e+01,  8.9218400e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2010000e+03,  9.2020000e+03,  9.2030000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 9.2000000e+03,  9.2010000e+03,  9.2020000e+03, ...,
+         4.6997000e+04,  4.6998000e+04,  4.6999000e+04]])), first_start, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:57:04 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[ 0.0000000e+00,  4.0000000e+00,  8.0000000e+00, ...,
+         1.5972300e+05,  1.5972700e+05,  1.5973100e+05],
+       [ 8.9324690e+01,  8.9536590e+01,  8.9218400e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2010000e+03,  9.2020000e+03,  9.2030000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 9.2000000e+03,  9.2010000e+03,  9.2020000e+03, ...,
+         4.6997000e+04,  4.6998000e+04,  4.6999000e+04]])), first_start, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:57:10 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[0.0000000e+00, 4.0000000e+00, 8.0000000e+00, ..., 1.5972300e+05,
+        1.5972700e+05, 1.5973100e+05],
+       [9.5690910e+01, 9.8427070e+01, 9.7407100e+01, ..., 9.6396930e+00,
+        1.0520610e+01, 8.4334370e+00],
+       [          nan,           nan,           nan, ..., 8.4674917e-01,
+        9.0841671e-01, 9.0841671e-01],
+       [9.2010000e+03, 9.2020000e+03, 9.2030000e+03, ..., 4.6998000e+04,
+        4.6999000e+04, 4.7000000e+04],
+       [9.2000000e+03, 9.2010000e+03, 9.2020000e+03, ..., 4.6997000e+04,
+        4.6998000e+04, 4.6999000e+04]]), array([[ 0.0000000e+00,  4.0000000e+00,  8.0000000e+00, ...,
+         1.5972300e+05,  1.5972700e+05,  1.5973100e+05],
+       [ 8.9324690e+01,  8.9536590e+01,  8.9218400e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2010000e+03,  9.2020000e+03,  9.2030000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 9.2000000e+03,  9.2010000e+03,  9.2020000e+03, ...,
+         4.6997000e+04,  4.6998000e+04,  4.6999000e+04]])), first_start, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:57:39 Ran with args: (sql_create, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:57:39 Ran with args: (sql_create, db: pulses_he3, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:57:39 Ran with args: (sql_create, db: pulses_he3, 'hec_0bar', 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:57:39 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:57:53 Ran with args: (sql_create, db: pulses_he3, 'hec_9psi', 'ic_9psi'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:57:53 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:58:07 Ran with args: (sql_create, db: pulses_he3, 'hec_22bar', 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:58:07 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:58:12 Ran with args: (sql_create, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:58:12 Ran with args: (sql_create, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:58:12 Ran with args: (sql_create, db: pulses_he3, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:58:12 Ran with args: (sql_create, db: pulses_he3, 'hec_0bar', 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:58:12 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:58:26 Ran with args: (sql_create, db: pulses_he3, 'hec_9psi', 'ic_9psi'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:58:26 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:58:40 Ran with args: (sql_create, db: pulses_he3, 'hec_22bar', 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:58:40 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 22:58:45 Ran with args: (sql_create, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:00:25 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:00:25 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:00:25 Ran with args: (timetotemp 0bar, db: pulses_he3,), first_start, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:00:25 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), import_fun, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:00:26 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'ic_0bar'), import_fun, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:00:27 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[0.0000000e+00, 4.0000000e+00, 8.0000000e+00, ..., 1.5972300e+05,
+        1.5972700e+05, 1.5973100e+05],
+       [9.5690910e+01, 9.8427070e+01, 9.7407100e+01, ..., 9.6396930e+00,
+        1.0520610e+01, 8.4334370e+00],
+       [          nan,           nan,           nan, ..., 8.4674917e-01,
+        9.0841671e-01, 9.0841671e-01],
+       [9.2010000e+03, 9.2020000e+03, 9.2030000e+03, ..., 4.6998000e+04,
+        4.6999000e+04, 4.7000000e+04],
+       [9.2000000e+03, 9.2010000e+03, 9.2020000e+03, ..., 4.6997000e+04,
+        4.6998000e+04, 4.6999000e+04]]), array([[ 0.0000000e+00,  4.0000000e+00,  8.0000000e+00, ...,
+         1.5972300e+05,  1.5972700e+05,  1.5973100e+05],
+       [ 8.9324690e+01,  8.9536590e+01,  8.9218400e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2010000e+03,  9.2020000e+03,  9.2030000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 9.2000000e+03,  9.2010000e+03,  9.2020000e+03, ...,
+         4.6997000e+04,  4.6998000e+04,  4.6999000e+04]])), first_start, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:00:27 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[ 0.0000000e+00,  4.0000000e+00,  8.0000000e+00, ...,
+         1.5972300e+05,  1.5972700e+05,  1.5973100e+05],
+       [ 8.9324690e+01,  8.9536590e+01,  8.9218400e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2010000e+03,  9.2020000e+03,  9.2030000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 9.2000000e+03,  9.2010000e+03,  9.2020000e+03, ...,
+         4.6997000e+04,  4.6998000e+04,  4.6999000e+04]])), first_start, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:00:33 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[0.0000000e+00, 4.0000000e+00, 8.0000000e+00, ..., 1.5972300e+05,
+        1.5972700e+05, 1.5973100e+05],
+       [9.5690910e+01, 9.8427070e+01, 9.7407100e+01, ..., 9.6396930e+00,
+        1.0520610e+01, 8.4334370e+00],
+       [          nan,           nan,           nan, ..., 8.4674917e-01,
+        9.0841671e-01, 9.0841671e-01],
+       [9.2010000e+03, 9.2020000e+03, 9.2030000e+03, ..., 4.6998000e+04,
+        4.6999000e+04, 4.7000000e+04],
+       [9.2000000e+03, 9.2010000e+03, 9.2020000e+03, ..., 4.6997000e+04,
+        4.6998000e+04, 4.6999000e+04]]), array([[ 0.0000000e+00,  4.0000000e+00,  8.0000000e+00, ...,
+         1.5972300e+05,  1.5972700e+05,  1.5973100e+05],
+       [ 8.9324690e+01,  8.9536590e+01,  8.9218400e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2010000e+03,  9.2020000e+03,  9.2030000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 9.2000000e+03,  9.2010000e+03,  9.2020000e+03, ...,
+         4.6997000e+04,  4.6998000e+04,  4.6999000e+04]])), first_start, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:07:56 Ran with args: (sql_create, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:07:56 Ran with args: (sql_create, db: pulses_he3, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:07:56 Ran with args: (sql_create, db: pulses_he3, 'hec_0bar', 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:07:56 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:08:10 Ran with args: (sql_create, db: pulses_he3, 'hec_9psi', 'ic_9psi'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:08:10 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:08:23 Ran with args: (sql_create, db: pulses_he3, 'hec_22bar', 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:08:24 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:08:28 Ran with args: (sql_create, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:08:28 Ran with args: (sql_create, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:08:28 Ran with args: (sql_create, db: pulses_he3, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:08:29 Ran with args: (sql_create, db: pulses_he3, 'hec_0bar', 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:08:29 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:08:45 Ran with args: (sql_create, db: pulses_he3, 'hec_9psi', 'ic_9psi'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:08:46 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:09:01 Ran with args: (sql_create, db: pulses_he3, 'hec_22bar', 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:09:01 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:09:07 Ran with args: (sql_create, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:11:08 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:11:08 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:11:08 Ran with args: (timetotemp 0bar, db: pulses_he3,), first_start, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:11:08 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), import_fun, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:11:09 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'ic_0bar'), import_fun, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:11:10 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[0.0000000e+00, 4.0000000e+00, 8.0000000e+00, ..., 1.5972300e+05,
+        1.5972700e+05, 1.5973100e+05],
+       [9.5690910e+01, 9.8427070e+01, 9.7407100e+01, ..., 9.6396930e+00,
+        1.0520610e+01, 8.4334370e+00],
+       [          nan,           nan,           nan, ..., 8.4674917e-01,
+        9.0841671e-01, 9.0841671e-01],
+       [9.2010000e+03, 9.2020000e+03, 9.2030000e+03, ..., 4.6998000e+04,
+        4.6999000e+04, 4.7000000e+04],
+       [9.2000000e+03, 9.2010000e+03, 9.2020000e+03, ..., 4.6997000e+04,
+        4.6998000e+04, 4.6999000e+04]]), array([[ 0.0000000e+00,  4.0000000e+00,  8.0000000e+00, ...,
+         1.5972300e+05,  1.5972700e+05,  1.5973100e+05],
+       [ 8.9324690e+01,  8.9536590e+01,  8.9218400e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2010000e+03,  9.2020000e+03,  9.2030000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 9.2000000e+03,  9.2010000e+03,  9.2020000e+03, ...,
+         4.6997000e+04,  4.6998000e+04,  4.6999000e+04]])), first_start, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:11:10 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[ 0.0000000e+00,  4.0000000e+00,  8.0000000e+00, ...,
+         1.5972300e+05,  1.5972700e+05,  1.5973100e+05],
+       [ 8.9324690e+01,  8.9536590e+01,  8.9218400e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2010000e+03,  9.2020000e+03,  9.2030000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 9.2000000e+03,  9.2010000e+03,  9.2020000e+03, ...,
+         4.6997000e+04,  4.6998000e+04,  4.6999000e+04]])), first_start, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:11:17 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[0.0000000e+00, 4.0000000e+00, 8.0000000e+00, ..., 1.5972300e+05,
+        1.5972700e+05, 1.5973100e+05],
+       [9.5690910e+01, 9.8427070e+01, 9.7407100e+01, ..., 9.6396930e+00,
+        1.0520610e+01, 8.4334370e+00],
+       [          nan,           nan,           nan, ..., 8.4674917e-01,
+        9.0841671e-01, 9.0841671e-01],
+       [9.2010000e+03, 9.2020000e+03, 9.2030000e+03, ..., 4.6998000e+04,
+        4.6999000e+04, 4.7000000e+04],
+       [9.2000000e+03, 9.2010000e+03, 9.2020000e+03, ..., 4.6997000e+04,
+        4.6998000e+04, 4.6999000e+04]]), array([[ 0.0000000e+00,  4.0000000e+00,  8.0000000e+00, ...,
+         1.5972300e+05,  1.5972700e+05,  1.5973100e+05],
+       [ 8.9324690e+01,  8.9536590e+01,  8.9218400e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2010000e+03,  9.2020000e+03,  9.2030000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 9.2000000e+03,  9.2010000e+03,  9.2020000e+03, ...,
+         4.6997000e+04,  4.6998000e+04,  4.6999000e+04]])), first_start, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:17:52 Ran with args: (sql_create, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:17:52 Ran with args: (sql_create, db: pulses_he3, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:17:53 Ran with args: (sql_create, db: pulses_he3, 'hec_0bar', 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:17:53 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:18:07 Ran with args: (sql_create, db: pulses_he3, 'hec_9psi', 'ic_9psi'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:18:07 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:18:21 Ran with args: (sql_create, db: pulses_he3, 'hec_22bar', 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:18:21 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:18:26 Ran with args: (sql_create, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:18:26 Ran with args: (sql_create, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:18:26 Ran with args: (sql_create, db: pulses_he3, {'0bar': {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}, '9psi': {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}, '22bar': {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:18:26 Ran with args: (sql_create, db: pulses_he3, 'hec_0bar', 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:18:26 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_0bar_01.dat', 'CF_0bar_02.dat', 'CF_0bar_03.dat'], 'path2': ['FF_0bar_01.dat', 'FF_0bar_02.dat', 'FF_0bar_03.dat'], 'tables': ('hec_0bar', 'ic_0bar')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:18:41 Ran with args: (sql_create, db: pulses_he3, 'hec_9psi', 'ic_9psi'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:18:41 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_9psi_01.dat', 'CF_9psi_02.dat', 'CF_9psi_03.dat'], 'path2': ['FF_9psi_01.dat', 'FF_9psi_02.dat', 'FF_9psi_03.dat'], 'tables': ('hec_9psi', 'ic_9psi')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:18:56 Ran with args: (sql_create, db: pulses_he3, 'hec_22bar', 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:18:56 Ran with args: (sql_create, db: pulses_he3, {'path1': ['CF_22bar_01.dat', 'CF_22bar_02.dat'], 'path2': ['FF_22bar_01.dat', 'FF_22bar_02.dat'], 'tables': ('hec_22bar', 'ic_22bar')}), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:19:01 Ran with args: (sql_create, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:20:09 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:20:09 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:20:09 Ran with args: (timetotemp 0bar, db: pulses_he3,), first_start, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:20:09 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), import_fun, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:20:10 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'ic_0bar'), import_fun, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:20:11 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[0.0000000e+00, 4.0000000e+00, 8.0000000e+00, ..., 1.5972300e+05,
+        1.5972700e+05, 1.5973100e+05],
+       [9.5690910e+01, 9.8427070e+01, 9.7407100e+01, ..., 9.6396930e+00,
+        1.0520610e+01, 8.4334370e+00],
+       [          nan,           nan,           nan, ..., 8.4674917e-01,
+        9.0841671e-01, 9.0841671e-01],
+       [9.2010000e+03, 9.2020000e+03, 9.2030000e+03, ..., 4.6998000e+04,
+        4.6999000e+04, 4.7000000e+04],
+       [9.2000000e+03, 9.2010000e+03, 9.2020000e+03, ..., 4.6997000e+04,
+        4.6998000e+04, 4.6999000e+04]]), array([[ 0.0000000e+00,  4.0000000e+00,  8.0000000e+00, ...,
+         1.5972300e+05,  1.5972700e+05,  1.5973100e+05],
+       [ 8.9324690e+01,  8.9536590e+01,  8.9218400e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2010000e+03,  9.2020000e+03,  9.2030000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 9.2000000e+03,  9.2010000e+03,  9.2020000e+03, ...,
+         4.6997000e+04,  4.6998000e+04,  4.6999000e+04]])), first_start, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:20:11 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[ 0.0000000e+00,  4.0000000e+00,  8.0000000e+00, ...,
+         1.5972300e+05,  1.5972700e+05,  1.5973100e+05],
+       [ 8.9324690e+01,  8.9536590e+01,  8.9218400e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2010000e+03,  9.2020000e+03,  9.2030000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 9.2000000e+03,  9.2010000e+03,  9.2020000e+03, ...,
+         4.6997000e+04,  4.6998000e+04,  4.6999000e+04]])), first_start, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:20:17 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[0.0000000e+00, 4.0000000e+00, 8.0000000e+00, ..., 1.5972300e+05,
+        1.5972700e+05, 1.5973100e+05],
+       [9.5690910e+01, 9.8427070e+01, 9.7407100e+01, ..., 9.6396930e+00,
+        1.0520610e+01, 8.4334370e+00],
+       [          nan,           nan,           nan, ..., 8.4674917e-01,
+        9.0841671e-01, 9.0841671e-01],
+       [9.2010000e+03, 9.2020000e+03, 9.2030000e+03, ..., 4.6998000e+04,
+        4.6999000e+04, 4.7000000e+04],
+       [9.2000000e+03, 9.2010000e+03, 9.2020000e+03, ..., 4.6997000e+04,
+        4.6998000e+04, 4.6999000e+04]]), array([[ 0.0000000e+00,  4.0000000e+00,  8.0000000e+00, ...,
+         1.5972300e+05,  1.5972700e+05,  1.5973100e+05],
+       [ 8.9324690e+01,  8.9536590e+01,  8.9218400e+01, ...,
+        -4.3901360e+03, -4.3901360e+03, -4.3901360e+03],
+       [           nan,            nan,            nan, ...,
+         8.4674917e-01,  9.0841671e-01,  9.0841671e-01],
+       [ 9.2010000e+03,  9.2020000e+03,  9.2030000e+03, ...,
+         4.6998000e+04,  4.6999000e+04,  4.7000000e+04],
+       [ 9.2000000e+03,  9.2010000e+03,  9.2020000e+03, ...,
+         4.6997000e+04,  4.6998000e+04,  4.6999000e+04]])), first_start, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:20:18 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:20:18 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:20:18 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:20:18 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-06 23:20:19 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:20 Ran with args: (sql_create, db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:20 Ran with args: (sql_create, db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), setUp, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:20 Ran with args: (sql_create, db: test_s, 'table1', 'table2'), test_DropTable, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:20 Ran with args: (sql_create, db: test_s, 'table'), test_DropTable, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:20 Ran with args: (sql_create, db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), test_DropTable, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:20 Ran with args: (sql_create, db: test_s,), tearDown, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:20 Ran with args: (sql_create, db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:20 Ran with args: (sql_create, db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), setUp, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:20 Ran with args: (sql_create, db: test_s, 'table1', 'table2'), test_InsertTables, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:20 Ran with args: (sql_create, db: test_s, {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}), test_InsertTables, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:25 Ran with args: (sql_create, db: test_s, [2, 3, 'a']), test_InsertTables, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:25 Ran with args: (sql_create, db: test_s,), tearDown, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:25 Ran with args: (sql_create, db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:25 Ran with args: (sql_create, db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), setUp, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:25 Ran with args: (sql_create, db: test_s, 'table1', 'table2'), test_Select_col, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:25 Ran with args: (sql_create, db: test_s, {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}), test_Select_col, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:29 Ran with args: (sql_create, db: test_s, ['time', 'Tmc'], 'table2'), test_Select_col, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:29 Ran with args: (sql_create, db: test_s, (1, 2, 3), 'table2'), test_Select_col, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:29 Ran with args: (sql_create, db: test_s,), tearDown, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:29 Ran with args: (sql_create, db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:29 Ran with args: (sql_create, db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), setUp, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:29 Ran with args: (sql_create, db: test_s, 'table1', 'table2'), test_createTable, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:30 Ran with args: (sql_create, db: test_s, 0, 'table2'), test_createTable, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:10:30 Ran with args: (sql_create, db: test_s,), tearDown, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:26 Ran with args: (sql_create, db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:26 Ran with args: (sql_create, db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), setUp, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:26 Ran with args: (sql_create, db: test_s, 'table1', 'table2'), test_DropTable, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:26 Ran with args: (sql_create, db: test_s, 'table'), test_DropTable, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:26 Ran with args: (sql_create, db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), test_DropTable, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:26 Ran with args: (sql_create, db: test_s,), tearDown, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:26 Ran with args: (sql_create, db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:26 Ran with args: (sql_create, db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), setUp, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:26 Ran with args: (sql_create, db: test_s, 'table1', 'table2'), test_InsertTables, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:26 Ran with args: (sql_create, db: test_s, {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}), test_InsertTables, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:31 Ran with args: (sql_create, db: test_s, [2, 3, 'a']), test_InsertTables, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:31 Ran with args: (sql_create, db: test_s,), tearDown, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:31 Ran with args: (sql_create, db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:31 Ran with args: (sql_create, db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), setUp, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:31 Ran with args: (sql_create, db: test_s, 'table1', 'table2'), test_Select_col, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:31 Ran with args: (sql_create, db: test_s, {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}), test_Select_col, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:35 Ran with args: (sql_create, db: test_s, ['time', 'Tmc'], 'table2'), test_Select_col, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:36 Ran with args: (sql_create, db: test_s, (1, 2, 3), 'table2'), test_Select_col, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:36 Ran with args: (sql_create, db: test_s,), tearDown, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:36 Ran with args: (sql_create, db: test_s, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'database': 'test_s', 'host': '127.0.0.1', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:36 Ran with args: (sql_create, db: test_s, {'0bar': {'path1': ['CF_0bar_01.dat'], 'path2': ['FF_0bar_01.dat'], 'tables': ('table1', 'table2')}}), setUp, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:36 Ran with args: (sql_create, db: test_s, 'table1', 'table2'), test_createTable, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:36 Ran with args: (sql_create, db: test_s, 0, 'table2'), test_createTable, and kwargs: {} 
+
+INFO:root: 2018-12-09 00:11:36 Ran with args: (sql_create, db: test_s,), tearDown, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:32:09 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:32:09 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:32:09 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:32:10 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:32:10 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:32:11 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:32:56 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:32:56 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:32:56 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:32:57 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:32:57 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:32:58 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:34:56 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:34:56 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:34:56 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:34:56 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:34:56 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:34:57 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:44:15 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:44:15 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:44:15 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:44:16 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:44:16 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:44:16 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:46:04 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:46:04 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:46:04 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:46:05 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:46:05 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 12:46:06 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:19:12 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:19:12 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar', ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:19:12 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulseJoin, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:19:12 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:19:12 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:19:13 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:19:13 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:19:13 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:22:31 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:22:31 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar', ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:22:31 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulseJoin, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:22:31 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:22:31 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:22:32 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:22:32 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:22:33 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:23:47 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:23:47 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar', ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:23:47 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulseJoin, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:23:47 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:23:47 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:23:48 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:23:48 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:23:49 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:24:50 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:24:50 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar', ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:24:50 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulseJoin, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:24:50 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:24:50 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:24:51 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:24:51 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:24:52 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:43:00 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:43:00 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar', ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:43:00 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulseJoin, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:43:00 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index', 'pulse'], 'hec_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:43:00 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:43:01 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tmc', 'index'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:43:01 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulse, and kwargs: {} 
+
+INFO:root: 2018-12-09 19:43:01 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
 
