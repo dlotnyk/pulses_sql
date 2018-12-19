@@ -123,9 +123,9 @@ class TestCreatedata(unittest.TestCase):
         self.assertEqual(res1[0][0],res2[0][0],'numbers of rows in tables should be equal')
         self.assertEqual(res1[0][0],20451,'some data are missing during SQL insert prcedure')
         self.assertAlmostEqual(res3[0][0], 41.65548, 2, 'wrong first data import into IC table')
-        self.assertAlmostEqual(res4[0][0], 37.32284, 2, 'wrong first data import into HEC table')
+        self.assertAlmostEqual(res4[0][0], 35.52532, 2, 'wrong first data import into HEC table')
         self.assertAlmostEqual(res5[0][0], 55.47477, 2, 'wrong last data import into IC table')
-        self.assertAlmostEqual(res6[0][0], 51.01369, 2, 'wrong last data import into HEC table')
+        self.assertAlmostEqual(res6[0][0], 49.13824, 2, 'wrong last data import into HEC table')
         a=[2,3,'a'] # should be a dict
         b={1:[1,2,3],2:(0,1,2),3:[3,5,6]} # 3 - is tuple
         with self.assertRaises(AssertionError):

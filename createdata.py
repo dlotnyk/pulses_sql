@@ -15,6 +15,7 @@ from mysql.connector import errorcode
 from functools import wraps
 import sqlite3 as lite
 import inspect
+import scipy.signal as ss
 
 #-------------------------------------------------------------
 def time_this(original_function):  
@@ -53,7 +54,7 @@ def my_logger(orig_func):
 #-------------------------------------------------------------
 class sql_create():
     '''create data for pulses'''
-    
+    filt_num=31
     tc={'0bar':0.929,'9psi':1.013,'22bar':2.293} # list of Tc for experiments
     tables={'0bar':('hec_0bar','ic_0bar'),'9psi':('hec_9psi','ic_9psi'),'22bar':('hec_22bar','ic_22bar')}
     
@@ -222,6 +223,8 @@ class sql_create():
                 counter += 1
             else:
                 data1=np.concatenate((data1,data),axis=1)
+        filt=ss.medfilt(data1[1],self.filt_num)
+        data1[1]=filt
         # IC 0 bar
         counter=0
         for p1 in path2:
@@ -327,8 +330,9 @@ forks={'0bar':{'path1':["CF_0bar_01.dat","CF_0bar_02.dat","CF_0bar_03.dat"],
                 }           
        }
         
-#        
+        
 #A=sql_create(conf)
+#A.filt_num=41
 ###A.select_col(['index','Q'],'tb_n')
 ###A.connect_loc(conf_loc)
 ###A.connect_f(conf)
