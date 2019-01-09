@@ -19,11 +19,13 @@ warnings.simplefilter('ignore', np.RankWarning)
 from createdata import sql_create as sqdata
 from createdata import time_this
 from createdata import my_logger
+from createdata import calltracker
 
 #-------------------------------------
 class timetotemp(sqdata):
     vals=['time','Q','Tmc','index','pulse'] # the most important columns
     plimit=1500 # value in Q which identify the pulsing
+    callme=True
 #---------------------------------------------------------
     def __init__(self,conf,sett):
         '''connect to conn mysql server with data'''
@@ -223,7 +225,8 @@ class timetotemp(sqdata):
     @my_logger
     @time_this
     def temp_fit(self,nump):
-        '''nump - polyfit regression fit of temperature data, removing nan first'''
+        '''nump - polyfit regression fit of temperature data, removing nan first
+        select Tmc but update Tmc/Tc in order to save original data in Tmc'''
         res=self.sel_onlypulse(['time','Tmc','index'],self.tables[self.sett['pressure']][0])
         na=np.where(np.isnan(res[1]))
         sh=np.shape(res)[1]
@@ -239,10 +242,10 @@ class timetotemp(sqdata):
         fit_rev=np.polyfit(temp2,res[0][d1],nump)
 #        timeRev=np.poly1d(fit_rev)
         for idx,y in enumerate(fit_fn(res[0])):
-            s_com1=("UPDATE `{0}` SET `Tmc` = '{1}' WHERE `{0}`.`index` = '{2}'".format(self.tables[self.sett['pressure']][0],y,res[2][idx]))
-#            s_com2=("UPDATE `{0}` SET `Tmc` = '{1}' WHERE `{0}`.`index` = '{2}'".format(self.tables[self.sett['pressure']][1],y,res[2][idx]))
+            s_com1=("UPDATE `{0}` SET `Tmc/Tc` = '{1}' WHERE `{0}`.`index` = '{2}'".format(self.tables[self.sett['pressure']][0],y,res[2][idx]))
+            s_com2=("UPDATE `{0}` SET `Tmc/Tc` = '{1}' WHERE `{0}`.`index` = '{2}'".format(self.tables[self.sett['pressure']][1],y,res[2][idx]))
             self.cursor.execute(s_com1)
-#            self.cursor.execute(s_com2)
+            self.cursor.execute(s_com2)
         self.cnx.commit()
 #        print(s_com1)
 #        print(s_com2)
@@ -264,7 +267,7 @@ class timetotemp(sqdata):
         '''Transformation of Q into Temperature based on HEC Fork
         nump - degree of polyfit'''
         assert type(nump) is int,"Must be integer"
-        res=self.sel_onlypulse(['Q','Tmc','index','time'],self.tables[self.sett['pressure']][0])
+        res=self.sel_onlypulse(['Q','Tmc/Tc','index','time'],self.tables[self.sett['pressure']][0]) # choose updated values Tmc/Tc
         filt=ss.medfilt(res[0],21)
         w=np.ones(len(res[0]))
         w[0:100]=15
@@ -286,9 +289,9 @@ class timetotemp(sqdata):
         ax1.plot(res[1],filt, color='green',lw=1)
         plt.grid()
         ax2 = fig1.add_subplot(212)
-        ax2.set_ylabel('T/Tc')
+        ax2.set_ylabel(r'$T/T_c$')
         ax2.set_xlabel('time')
-        ax2.set_title('T/Tc vs Q')
+        ax2.set_title(r'$T/T_c$ vs Q')
         ax2.plot(res[3], fit_fn2(res[0])/self.tc[self.sett['pressure']], color='blue',lw=1)
 #        ax2.plot(Q,T, color='red',lw=1)
 #        ax2.plot(filt,res[1], color='green',lw=1)
@@ -298,28 +301,42 @@ class timetotemp(sqdata):
 #        dat=np.vstack((filt,T))
         return fit2
     #------------------------------------------------------------
+    @my_logger
+    @time_this
     def QtoTic(self,fit):
         '''Converts Q to temp for an IC fork using calibration from HEC'''
         fit_fn=np.poly1d(fit)
-        res=self.sel_onlypulseJoin(['Q'],self.tables[self.sett['pressure']][0],['Q','Tmc','index','time'],self.tables[self.sett['pressure']][1])
+        res=self.sel_onlypulseJoin(['Q'],self.tables[self.sett['pressure']][0],['Q','Tmc/Tc','index','time'],self.tables[self.sett['pressure']][1])
         # connect two datasets in the end taking into account hte offset
         Q1=np.mean(res[1][-10:-1])
         Q2=np.mean(res[0][-10:-1])
         dQ=Q1-Q2 # correction to Q
-        print(Q1,Q2,dQ)
+        tloc=fit_fn(res[1]-dQ)
         
+        fig1 = plt.figure(9, clear = True)
+        ax1 = fig1.add_subplot(111)
+        ax1.set_ylabel(r'$T_{loc}$')
+        ax1.set_xlabel('time')
+        ax1.set_title(r'$T_{loc}$ vs time')
+        ax1.plot(res[4], tloc, color='blue',lw=1)
+#        ax1.plot(res[1],Q, color='red',lw=1)
+#        ax1.plot(res[1],filt, color='green',lw=1)
+        plt.grid()
+        plt.show()
+        return dQ    
         
  #------------------------------------------------------------
     @my_logger
     @time_this
-    def update_local(self,tab,fit):
+    def update_local(self,tab,fit,dQ):
+        '''update a local temerature coloumn in sql table'''
         assert type(tab) is str,'Table is string'
         assert type(fit) is np.ndarray,"fit is numpy.ndarray"
         fit_fn=np.poly1d(fit)
-        res=self.sel_onlypulse(['Q','index'],self.tables[self.sett['pressure']][0])
+        res=self.sel_onlypulse(['Q','index'],tab)
          # update a SQL table
         for idx,val in enumerate(res[0]):
-            self.__set_local(tab,res[1][idx],fit_fn(val),fit_fn(val)/self.tc[self.sett['pressure']])
+            self.__set_local(tab,res[1][idx],fit_fn(val-dQ),fit_fn(val-dQ)/self.tc[self.sett['pressure']])
         self.cnx.commit()
         
  #------------------------------------------------------------        
@@ -329,7 +346,88 @@ class timetotemp(sqdata):
         s_com2=("UPDATE `{0}` SET `Tloc/Tc` = '{1}' WHERE `{0}`.`index` = '{2}'".format(tab,value2,index))
         self.cursor.execute(s_com1)
         self.cursor.execute(s_com2)
-        
+#------------------------------------------------------------   
+    
+#    @my_logger
+#    @time_this 
+    @calltracker
+    def pick_sep(self,num,nump):
+        '''pick a separate pulse num. sstarts from 0'''
+        assert type(num) is int and type(nump) is int,"both params are integers"
+#        nump=20
+        self.__pulse_st()
+        ns=str(self.mval+1000*num)
+        ne=str(self.mval+1000*(num+1))
+        query=("SELECT `{0}`.`Tloc/Tc`, `{1}`.`Tloc/Tc`, `{1}`.`Tmc/Tc`"
+               " FROM `{0}` JOIN `{1}` "
+               "ON `{0}`.`pulse` = `{1}`.`pulse` "
+               "WHERE `{0}`.`pulse` BETWEEN '{2}' AND '{3}' ORDER BY `{0}`.`index` ASC".format(self.tables[self.sett['pressure']][0],self.tables[self.sett['pressure']][1],ns,ne))
+#        print(query)
+        self.cursor.execute(query)
+        res=self.cursor.fetchall()
+#        dat=self._removeNull(res)
+        dat=res
+        dat=dat[:][1:]
+        dat1=np.transpose(dat)    
+        fit=np.polyfit(dat1[1][0:nump],dat1[0][0:nump],1)
+        fig1 = plt.figure(3, clear = self.callme)
+        if self.callme:
+            ax1 = fig1.add_subplot(111)
+            ax1.set_xlabel(r'$T_{loc}/T_c$(IC)')
+            ax1.set_ylabel(r'$T_{loc}/T_c$(HEC)')
+            ax1.set_title(r'$T_{loc}$ vs $T_{loc}$')
+        else:
+            ax1=plt.gca()
+        ax1.scatter(dat1[1][0:nump], dat1[0][0:nump], color='blue',s=2)
+#        ax1.scatter(dat1[1], dat1[0], color='blue',s=2)
+        plt.grid()
+        plt.show()
+        self.callme=False
+        if fit[0]<0:
+            fit[0]=np.nan
+        ret=(fit[0],dat1[2][0]/self.tc[self.sett['pressure']])
+        return ret
+#------------------------------------------------------------   
+    @my_logger
+    @time_this 
+    def loop_number(self):
+        '''find a number of pulses which is identical to len(pulse_indicies)'''
+        self.__pulse_st()
+        query=("SELECT MAX(`{0}`.`pulse`) FROM `{0}`".format(self.tables[self.sett['pressure']][0]))
+        self.cursor.execute(query)
+        res=self.cursor.fetchall()
+        dat=round(res[0][0],-3)
+        num=int((dat-self.mval)/1000)
+#        print(self.mval,dat,num)
+        return num
+#------------------------------------------------------------   
+    @my_logger
+    @time_this 
+    def plot_dt(self,f):
+        '''plot dt/dt vs Tmc/Tc'''
+        assert type(f) is list and type(f[0]) is tuple,"input should be a list of tuples"
+        f=f[1:]
+        fig2 = plt.figure(4, clear = True)
+        ax1 = fig2.add_subplot(111)
+        ax1.set_ylabel(r'$dT_{HEC}/dT_{IC}$')
+        ax1.set_xlabel('time [sec]')
+        ax1.set_title('dT/dT')
+        ax1.scatter([ii[1] for ii in f],[ii[0] for ii in f],color='green', s=5)
+        plt.grid()
+        plt.show()
+#------------------------------------------------------------   
+    @my_logger
+    @time_this 
+    def save_dt(self,f):
+        '''save into file the dt/dt vs Tmc/Tc'''
+        assert type(f) is list and type(f[0]) is tuple,"input should be a list of tuples"
+        name="dtdt_for_"+self.sett['pressure']+'.dat'
+        list1=["{0} \t {1} \n".format(ii[1],ii[0]) for ii in f]
+        list1.insert(0,"{0} \t {1} \n".format("Tmc/Tc","dThec/dTic"))
+        str1 = ''.join(list1)
+        with open(name,'w') as file1:
+            file1.write(str1)
+                  
 # main program below------------------------------------------------------------------------   
 conf = {
         'user': 'dlotnyk',
@@ -349,15 +447,25 @@ A=timetotemp(conf,sett1)
 #A.first_start()
 #data1=A.sel_onlypulse(['time','Q','Tmc','index','pulse'],A.tables[A.sett['pressure']][0])
 #data2=A.sel_onlypulse(['time','Q','Tmc','index'],A.tables[A.sett['pressure']][1])
-##A.nopulse1,A.nopulse2=A.pulse_remove(15,35,data1,data2) # for 0 bar
+#A.nopulse1,A.nopulse2=A.pulse_remove(15,35,data1,data2) # for 0 bar
 #A.nopulse1,A.nopulse2=A.pulse_remove(10,50,data1,data2) # for 9 psi and 22 bar
 #del data1
 #del data2
 #f_lt,f_tl=A.temp_fit(1)
-fit_qt=A.QtoT(10) # optimal for 0 bar
-A.QtoTic(fit_qt)
-#A.update_local(A.tables[A.sett['pressure']][0],fit_qt)
-dataJ=A.sel_onlypulseJoin(['time','Q','Tloc/Tc','index','pulse'],A.tables[A.sett['pressure']][0],['Q'],A.tables[A.sett['pressure']][1])
+#f_lt,f_tl=A.temp_fit(3) # 9psi
+#f_lt,f_tl=A.temp_fit(4) # for 22 bar
+#fit_qt=A.QtoT(10) # optimal for 0 bar and 9 psi
+#fit_qt=A.QtoT(16) # for 22 bar
+#dQ=A.QtoTic(fit_qt)
+#A.update_local(A.tables[A.sett['pressure']][0],fit_qt,0)
+#A.update_local(A.tables[A.sett['pressure']][1],fit_qt,dQ)
+#setattr(A.pick_sep,"callme",True)
+#A.pick_sep.callme=True
+p_num=A.loop_number()
+f_par=[A.pick_sep(ii,100) for ii in range(p_num)]
+A.plot_dt(f_par)
+A.save_dt(f_par)
+dataJ=A.sel_onlypulseJoin(['time','Q','Tloc/Tc','index','pulse'],A.tables[A.sett['pressure']][0],['Q','Tloc/Tc'],A.tables[A.sett['pressure']][1])
 
 
 fig1 = plt.figure(1, clear = True)
@@ -367,13 +475,13 @@ ax1.set_xlabel('time [sec]')
 ax1.set_title('Q vs time for both forks')
 ax1.scatter(dataJ[0],dataJ[1],color='green', s=0.5)
 ax1.scatter(dataJ[0],dataJ[5],color='red', s=0.5)
-#ax1.scatter(C.rawdata1[0][C.nopulse1],C.rawdata1[1][C.nopulse1],color='red', s=0.5)
+plt.grid()
 ax2 = fig1.add_subplot(212)
 ax2.set_ylabel('T')
 ax2.set_xlabel('time [sec]')
 ax2.set_title('T vs time for both forks')
 ax2.scatter(dataJ[0],dataJ[2],color='green', s=0.5)
-#ax2.scatter(data2[0],data2[2],color='red', s=0.5)
+ax2.scatter(dataJ[0],dataJ[6],color='red', s=0.5)
 plt.grid()
 plt.show()
 

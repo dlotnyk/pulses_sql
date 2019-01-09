@@ -16,7 +16,14 @@ from functools import wraps
 import sqlite3 as lite
 import inspect
 import scipy.signal as ss
-
+#-------------------------------------------------------------
+def calltracker(func):
+    @wraps(func)
+    def wrapper(*args):
+        wrapper.has_been_called = True
+        return func(*args)
+    wrapper.has_been_called = False
+    return wrapper
 #-------------------------------------------------------------
 def time_this(original_function):  
     '''Measures the processing time. Decorator'''
