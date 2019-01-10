@@ -91,7 +91,6 @@ class timetotemp(sqdata):
         nump=1
         for ii in data2[3]:
             if ii == data2[3][self.pulse_id[pul_id]]:
-#                print(pul_id, self.pulse_id[pul_id])
                 pul_id += 1
                 if pul_id == np.shape(self.pulse_id)[0]:
                     id1=self.pulse_id[pul_id-1]
@@ -101,11 +100,9 @@ class timetotemp(sqdata):
                     id1=self.pulse_id[pul_id-1]
                     id2=self.pulse_id[pul_id]
                 increm=1000/(id2-id1)
-#                self.rawdata1[4][count]=self.mval+1000*nump
                 self.__set_pulse(self.sett['indent']+count+1,self.mval+1000*nump)
                 nump+=1
             else:
-#                self.rawdata1[4][count]=ini
                 self.__set_pulse(self.sett['indent']+count+1,ini)
             count+=1
             ini+=increm
@@ -202,8 +199,6 @@ class timetotemp(sqdata):
     @time_this    
     def pulse_remove2(self,a):
         '''Remove pulse and n1/n2-surroundings'''
-#        a=np.where(np.abs(data2[1])>self.plimit)
-#        print(a[0],end=' ')
         new_in=-1
         for idx in a[0]:            
             self.__set_pulse(self.sett['indent']+idx+2,new_in)
@@ -215,7 +210,6 @@ class timetotemp(sqdata):
     def __remInsq(self,d1,b):
         '''update `pulse` values in table according to removing pulse'''
         new_in=-1
-#        print(245 in b[0])
         for idx, ni in enumerate(d1):
             if (ni==False) or (idx in b[0]):
                 self.__set_pulse(self.sett['indent']+idx+2,new_in)
@@ -240,7 +234,6 @@ class timetotemp(sqdata):
         fit[-1]+=dt
         temp2=fit_fn(res[0][d1])
         fit_rev=np.polyfit(temp2,res[0][d1],nump)
-#        timeRev=np.poly1d(fit_rev)
         for idx,y in enumerate(fit_fn(res[0])):
             s_com1=("UPDATE `{0}` SET `Tmc/Tc` = '{1}' WHERE `{0}`.`index` = '{2}'".format(self.tables[self.sett['pressure']][0],y,res[2][idx]))
             s_com2=("UPDATE `{0}` SET `Tmc/Tc` = '{1}' WHERE `{0}`.`index` = '{2}'".format(self.tables[self.sett['pressure']][1],y,res[2][idx]))
@@ -277,8 +270,6 @@ class timetotemp(sqdata):
         Q=fit_fn(res[1])
         fit2 = np.polyfit(Q,res[1],nump,w=w) # Q vs T fit. main one
         fit_fn2 = np.poly1d(fit2) # T
-#        T=fit_fn2(Q)
-       
         fig1 = plt.figure(8, clear = True)
         ax1 = fig1.add_subplot(211)
         ax1.set_ylabel('Q')
@@ -295,7 +286,6 @@ class timetotemp(sqdata):
         ax2.plot(res[3], fit_fn2(res[0])/self.tc[self.sett['pressure']], color='blue',lw=1)
 #        ax2.plot(Q,T, color='red',lw=1)
 #        ax2.plot(filt,res[1], color='green',lw=1)
-        
         plt.grid()
         plt.show()
 #        dat=np.vstack((filt,T))
@@ -466,7 +456,6 @@ f_par=[A.pick_sep(ii,100) for ii in range(p_num)]
 A.plot_dt(f_par)
 A.save_dt(f_par)
 dataJ=A.sel_onlypulseJoin(['time','Q','Tloc/Tc','index','pulse'],A.tables[A.sett['pressure']][0],['Q','Tloc/Tc'],A.tables[A.sett['pressure']][1])
-
 
 fig1 = plt.figure(1, clear = True)
 ax1 = fig1.add_subplot(211)
