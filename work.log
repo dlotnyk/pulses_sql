@@ -10399,3 +10399,131 @@ INFO:root: 2019-01-10 13:28:30 Ran with args: (timetotemp 0bar, db: pulses_he3,)
 
 INFO:root: 2019-01-10 13:28:31 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
 
+INFO:root: 2019-01-10 13:40:53 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:53 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:53 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:53 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:53 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:53 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:53 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:53 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:53 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:53 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:53 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:54 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:55 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:56 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:56 Ran with args: (timetotemp 0bar, db: pulses_he3,), pick_sep, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:56 Ran with args: (timetotemp 0bar, db: pulses_he3, [(0.212447426743764, 0.4585481750206172), (0.4149553016579805, 0.46260006876363485), (0.37239995771194595, 0.4718508747464373), (0.2513401143179937, 0.4810507775415134), (0.05216223330096248, 0.4902778287033769), (0.2325999571457063, 0.4994641573150593), (0.141234936714092, 0.5086708472018322), (0.21657110910802285, 0.5178809306344536), (0.14307473300986653, 0.5270876205212265), (0.18861391679386583, 0.5362807362246058), (0.17583041347345144, 0.5454908196572271), (0.12395597891888242, 0.554680541814758), (0.39383683605235903, 0.5638838381556825), (0.10968409148273672, 0.5730837409507586), (0.07393523711386761, 0.5822870372916832), (0.18781989669388652, 0.5914835465409108), (0.3010916782718027, 0.6007072041569259), (0.2024040765279947, 0.6099138940436989), (0.22727023178473457, 0.6191613064806529), (0.1468333687389883, 0.6283679963674259), (0.2750874068643951, 0.6376188023502284), (0.3685711032137085, 0.6468254922370014), (0.26679339563003307, 0.6560762982198038), (0.1794152021438782, 0.6652897751982736), (0.21363743369366114, 0.6745202199059854), (0.3152623503546743, 0.6837438775220005), (0.21314033041835, 0.6930252254174388), (0.21089532563826024, 0.7022556701251507), (0.31019702551391165, 0.7115404115664374), (0.24039205970630204, 0.7207674627283008), (0.20473354502076344, 0.7300454170778908), (0.1641619856735247, 0.7392588940563606), (0.4049137813079033, 0.7485402419517987), (0.25251848400041266, 0.7578249833930855), (0.12399821082785013, 0.7671708086596438), (0.2261777898604096, 0.7764419759175368), (0.3364148355394275, 0.7857844076382466), (0.2429191563518427, 0.7950691490795333), (0.3636227395949017, 0.8044217614377887), (0.1391939566732603, 0.81369632224153), (0.2736398346271296, 0.8230387539622399), (0.27346510534725893, 0.8323201018576782), (0.2179218538934685, 0.8416659271242365), (0.05777483907215752, 0.8509472750196747), (0.020945932906511408, 0.8602863131945363), (0.5763795052093893, 0.869564267544126), (0.30272768821270535, 0.8789134863565329), (0.2412502774714527, 0.8881880471602742), (0.1936595849821279, 0.900750953891138), (0.25292563220791037, 0.913259563888427), (0.3520146646040796, 0.9258122899817455), (0.40529925478898654, 0.9382869645205503), (0.4172377688114793, 0.9508532647972624), (0.723596724039752, 0.9633415135194608), (nan, 0.9759112073420216), (nan, 0.9883926689725233)]), <module, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:56 Ran with args: (timetotemp 0bar, db: pulses_he3, [(0.212447426743764, 0.4585481750206172), (0.4149553016579805, 0.46260006876363485), (0.37239995771194595, 0.4718508747464373), (0.2513401143179937, 0.4810507775415134), (0.05216223330096248, 0.4902778287033769), (0.2325999571457063, 0.4994641573150593), (0.141234936714092, 0.5086708472018322), (0.21657110910802285, 0.5178809306344536), (0.14307473300986653, 0.5270876205212265), (0.18861391679386583, 0.5362807362246058), (0.17583041347345144, 0.5454908196572271), (0.12395597891888242, 0.554680541814758), (0.39383683605235903, 0.5638838381556825), (0.10968409148273672, 0.5730837409507586), (0.07393523711386761, 0.5822870372916832), (0.18781989669388652, 0.5914835465409108), (0.3010916782718027, 0.6007072041569259), (0.2024040765279947, 0.6099138940436989), (0.22727023178473457, 0.6191613064806529), (0.1468333687389883, 0.6283679963674259), (0.2750874068643951, 0.6376188023502284), (0.3685711032137085, 0.6468254922370014), (0.26679339563003307, 0.6560762982198038), (0.1794152021438782, 0.6652897751982736), (0.21363743369366114, 0.6745202199059854), (0.3152623503546743, 0.6837438775220005), (0.21314033041835, 0.6930252254174388), (0.21089532563826024, 0.7022556701251507), (0.31019702551391165, 0.7115404115664374), (0.24039205970630204, 0.7207674627283008), (0.20473354502076344, 0.7300454170778908), (0.1641619856735247, 0.7392588940563606), (0.4049137813079033, 0.7485402419517987), (0.25251848400041266, 0.7578249833930855), (0.12399821082785013, 0.7671708086596438), (0.2261777898604096, 0.7764419759175368), (0.3364148355394275, 0.7857844076382466), (0.2429191563518427, 0.7950691490795333), (0.3636227395949017, 0.8044217614377887), (0.1391939566732603, 0.81369632224153), (0.2736398346271296, 0.8230387539622399), (0.27346510534725893, 0.8323201018576782), (0.2179218538934685, 0.8416659271242365), (0.05777483907215752, 0.8509472750196747), (0.020945932906511408, 0.8602863131945363), (0.5763795052093893, 0.869564267544126), (0.30272768821270535, 0.8789134863565329), (0.2412502774714527, 0.8881880471602742), (0.1936595849821279, 0.900750953891138), (0.25292563220791037, 0.913259563888427), (0.3520146646040796, 0.9258122899817455), (0.40529925478898654, 0.9382869645205503), (0.4172377688114793, 0.9508532647972624), (0.723596724039752, 0.9633415135194608), (nan, 0.9759112073420216), (nan, 0.9883926689725233)]), <module, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:56 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:56 Ran with args: (timetotemp 0bar, db: pulses_he3,), sel_onlypulseJoin, and kwargs: {} 
+
+INFO:root: 2019-01-10 13:40:57 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
