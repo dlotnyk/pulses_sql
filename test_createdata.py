@@ -3,7 +3,7 @@
 Created on Wed Nov 14 15:35:18 2018
 
 @author: dlotnyk
-Unittesting of createdaa.py
+Unittesting of createdata.py
 """
 from __future__ import print_function
 import unittest
@@ -13,7 +13,7 @@ import warnings
 warnings.simplefilter('ignore', np.RankWarning)
 warnings.filterwarnings("ignore", message="Reloaded modules: <chromosome_length>")
 class TestCreatedata(unittest.TestCase):
-    '''testing'''
+    '''testing of createdata.py'''
     @classmethod
     def setUpClass(cls):
         cls.forks={'0bar':{'path1':["CF_0bar_01.dat"],

@@ -337,15 +337,15 @@ forks={'0bar':{'path1':["CF_0bar_01.dat","CF_0bar_02.dat","CF_0bar_03.dat"],
                 }           
        }
         
-        
-#A=sql_create(conf)
-#A.filt_num=41
-###A.select_col(['index','Q'],'tb_n')
-###A.connect_loc(conf_loc)
-###A.connect_f(conf)
-##res=A.select_col(['Tmc'],'hec_22bar')
-#A.drop_f(forks)
-#for k,v in forks.items():
-#    A.create_table(v['tables'][0],v['tables'][1])
-#    A.insert_tables(v)
-#A.close_f()
+if __name__ == '__main__':        
+    A=sql_create(conf)
+    A.filt_num=41
+    ##A.select_col(['index','Q'],'tb_n')
+    ##A.connect_loc(conf_loc)
+    ##A.connect_f(conf)
+    #res=A.select_col(['Tmc'],'hec_22bar')
+    A.drop_f(forks)
+    for k,v in forks.items():
+        A.create_table(v['tables'][0],v['tables'][1])
+        A.insert_tables(v)
+    A.close_f()

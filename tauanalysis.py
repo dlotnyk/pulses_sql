@@ -2,7 +2,7 @@
 """
 Created on Mon Dec  3 11:05:06 2018
 
-@author: dmytr
+@author: dlotnyk
 """
 from __future__ import print_function
 import numpy as np
@@ -419,77 +419,67 @@ class timetotemp(sqdata):
             file1.write(str1)
                   
 # main program below------------------------------------------------------------------------   
-conf = {
-        'user': 'dlotnyk',
-        'password': 'RiDeaBiKe2RuN',
-        'host': '127.0.0.1',
-        'database': 'pulses_he3',
-        'raise_on_warnings': True,
-        }
-sett1={'pressure':'0bar','indent':9200,'cut':47000,'offset':1800
-       }
-sett2={'pressure':'9psi','indent':10000,'cut':53000,'offset':700
-       }
-sett3={'pressure':'22bar','indent':1000,'cut':41000,'offset':1
-       }
-
-A=timetotemp(conf,sett1)
-#A.first_start()
-#data1=A.sel_onlypulse(['time','Q','Tmc','index','pulse'],A.tables[A.sett['pressure']][0])
-#data2=A.sel_onlypulse(['time','Q','Tmc','index'],A.tables[A.sett['pressure']][1])
-#A.nopulse1,A.nopulse2=A.pulse_remove(15,35,data1,data2) # for 0 bar
-#A.nopulse1,A.nopulse2=A.pulse_remove(10,50,data1,data2) # for 9 psi and 22 bar
-#del data1
-#del data2
-#f_lt,f_tl=A.temp_fit(1)
-#f_lt,f_tl=A.temp_fit(3) # 9psi
-#f_lt,f_tl=A.temp_fit(4) # for 22 bar
-#fit_qt=A.QtoT(10) # optimal for 0 bar and 9 psi
-#fit_qt=A.QtoT(16) # for 22 bar
-#dQ=A.QtoTic(fit_qt)
-#A.update_local(A.tables[A.sett['pressure']][0],fit_qt,0)
-#A.update_local(A.tables[A.sett['pressure']][1],fit_qt,dQ)
-#setattr(A.pick_sep,"callme",True)
-#A.pick_sep.callme=True
-p_num=A.loop_number()
-f_par=[A.pick_sep(ii,100) for ii in range(p_num)]
-A.plot_dt(f_par)
-A.save_dt(f_par)
-dataJ=A.sel_onlypulseJoin(['time','Q','Tloc/Tc','index','pulse'],A.tables[A.sett['pressure']][0],['Q','Tloc/Tc'],A.tables[A.sett['pressure']][1])
-
-fig1 = plt.figure(1, clear = True)
-ax1 = fig1.add_subplot(211)
-ax1.set_ylabel('Q')
-ax1.set_xlabel('time [sec]')
-ax1.set_title('Q vs time for both forks')
-ax1.scatter(dataJ[0],dataJ[1],color='green', s=0.5)
-ax1.scatter(dataJ[0],dataJ[5],color='red', s=0.5)
-plt.grid()
-ax2 = fig1.add_subplot(212)
-ax2.set_ylabel('T')
-ax2.set_xlabel('time [sec]')
-ax2.set_title('T vs time for both forks')
-ax2.scatter(dataJ[0],dataJ[2],color='green', s=0.5)
-ax2.scatter(dataJ[0],dataJ[6],color='red', s=0.5)
-plt.grid()
-plt.show()
-
-fig2 = plt.figure(2, clear = True)
-ax1 = fig2.add_subplot(111)
-ax1.set_ylabel('pulse')
-ax1.set_xlabel('time [sec]')
-ax1.set_title('pulse vs time for both forks')
-ax1.scatter(dataJ[0],dataJ[4],color='green', s=0.5)
-plt.grid()
-plt.show()
-A.close_f()
-del A
-#B=timetotemp(conf,sett2)
-#B.pulse_renumb()
-#B.close_f()
-#del B
-#
-#C=timetotemp(conf,sett3)
-#C.pulse_renumb()
-#C.close_f()
-#del C
+if __name__ == '__main__':
+    conf = {
+            'user': 'dlotnyk',
+            'password': 'RiDeaBiKe2RuN',
+            'host': '127.0.0.1',
+            'database': 'pulses_he3',
+            'raise_on_warnings': True,
+            }
+    sett1={'pressure':'0bar','indent':9200,'cut':47000,'offset':1800
+           }
+    sett2={'pressure':'9psi','indent':10000,'cut':53000,'offset':700
+           }
+    sett3={'pressure':'22bar','indent':1000,'cut':41000,'offset':1
+           }
+    A=timetotemp(conf,sett1)
+    ##A.first_start()
+    ##data1=A.sel_onlypulse(['time','Q','Tmc','index','pulse'],A.tables[A.sett['pressure']][0])
+    ##data2=A.sel_onlypulse(['time','Q','Tmc','index'],A.tables[A.sett['pressure']][1])
+    ##A.nopulse1,A.nopulse2=A.pulse_remove(15,35,data1,data2) # for 0 bar
+    ##A.nopulse1,A.nopulse2=A.pulse_remove(10,50,data1,data2) # for 9 psi and 22 bar
+    ##del data1
+    ##del data2
+    ##f_lt,f_tl=A.temp_fit(1)
+    ##f_lt,f_tl=A.temp_fit(3) # 9psi
+    ##f_lt,f_tl=A.temp_fit(4) # for 22 bar
+    ##fit_qt=A.QtoT(10) # optimal for 0 bar and 9 psi
+    ##fit_qt=A.QtoT(16) # for 22 bar
+    ##dQ=A.QtoTic(fit_qt)
+    ##A.update_local(A.tables[A.sett['pressure']][0],fit_qt,0)
+    ##A.update_local(A.tables[A.sett['pressure']][1],fit_qt,dQ)
+    ##setattr(A.pick_sep,"callme",True)
+    ##A.pick_sep.callme=True
+    p_num=A.loop_number()
+    f_par=[A.pick_sep(ii,100) for ii in range(p_num)]
+    A.plot_dt(f_par)
+    A.save_dt(f_par)
+    dataJ=A.sel_onlypulseJoin(['time','Q','Tloc/Tc','index','pulse'],A.tables[A.sett['pressure']][0],['Q','Tloc/Tc'],A.tables[A.sett['pressure']][1])
+    #print(A.save_dt.__doc__)
+    fig1 = plt.figure(1, clear = True)
+    ax1 = fig1.add_subplot(211)
+    ax1.set_ylabel('Q')
+    ax1.set_xlabel('time [sec]')
+    ax1.set_title('Q vs time for both forks')
+    ax1.scatter(dataJ[0],dataJ[1],color='green', s=0.5)
+    ax1.scatter(dataJ[0],dataJ[5],color='red', s=0.5)
+    plt.grid()
+    ax2 = fig1.add_subplot(212)
+    ax2.set_ylabel('T')
+    ax2.set_xlabel('time [sec]')
+    ax2.set_title('T vs time for both forks')
+    ax2.scatter(dataJ[0],dataJ[2],color='green', s=0.5)
+    ax2.scatter(dataJ[0],dataJ[6],color='red', s=0.5)
+    plt.grid()
+    plt.show()
+    fig2 = plt.figure(2, clear = True)
+    ax1 = fig2.add_subplot(111)
+    ax1.set_ylabel('pulse')
+    ax1.set_xlabel('time [sec]')
+    ax1.set_title('pulse vs time for both forks')
+    ax1.scatter(dataJ[0],dataJ[4],color='green', s=0.5)
+    plt.grid()
+    plt.show()
+    A.close_f()
+    del A
