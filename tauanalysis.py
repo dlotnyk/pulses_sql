@@ -26,9 +26,11 @@ class timetotemp(sqdata):
     vals=['time','Q','Tmc','index','pulse'] # the most important columns
     plimit=1500 # value in Q which identify the pulsing
     callme=True
+    
 #---------------------------------------------------------
     def __init__(self,conf,sett):
         '''connect to conn mysql server with data'''
+        self.maxvaluecall=False
         self.conf=conf
         self.sett=sett
         self.title=sett['pressure']
@@ -137,7 +139,8 @@ class timetotemp(sqdata):
     @time_this
     def sel_onlypulse(self,r_list,tab):
         '''select data only with pulses i.e. 70000 and higher `pulse`'''
-        self.__pulse_st()
+        if not(self.maxvaluecall):
+            self.__pulse_st()
         cur=''
         for ii in r_list:
             cur+="`"+ii+"`, "
@@ -147,6 +150,7 @@ class timetotemp(sqdata):
         res=self.cursor.fetchall()
         dat=self._removeNull(res)
         dat1=np.transpose(dat)
+        self.maxvaluecall=True
         return dat1
  #---------------------------------------------------------  
     @my_logger
@@ -155,7 +159,8 @@ class timetotemp(sqdata):
         '''select data only with pulses i.e. 70000 and higher `pulse` JOIN two tables by `pulse`'''
         assert type(r_list1) is list and type(tab1) is str, "HEC data not list or string"
         assert type(r_list2) is list and type(tab2) is str, "IC data not list or string"
-        self.__pulse_st()
+        if not(self.maxvaluecall):
+            self.__pulse_st()
         cur1=''
         for ii in r_list1:
             cur1+="`"+str(tab1)+"`.`"+ii+"`, "
@@ -173,6 +178,7 @@ class timetotemp(sqdata):
         res=self.cursor.fetchall()
         dat=self._removeNull(res)
         dat1=np.transpose(dat)
+        self.maxvaluecall=True
         return dat1
  #---------------------------------------------------------  
     @my_logger  
@@ -345,7 +351,8 @@ class timetotemp(sqdata):
         '''pick a separate pulse num. sstarts from 0'''
         assert type(num) is int and type(nump) is int,"both params are integers"
 #        nump=20
-        self.__pulse_st()
+        if not(self.maxvaluecall):
+            self.__pulse_st()
         ns=str(self.mval+1000*num)
         ne=str(self.mval+1000*(num+1))
         query=("SELECT `{0}`.`Tloc/Tc`, `{1}`.`Tloc/Tc`, `{1}`.`Tmc/Tc`"
@@ -376,18 +383,21 @@ class timetotemp(sqdata):
         if fit[0]<0:
             fit[0]=np.nan
         ret=(fit[0],dat1[2][0]/self.tc[self.sett['pressure']])
+        self.maxvaluecall=True
         return ret
 #------------------------------------------------------------   
     @my_logger
     @time_this 
     def loop_number(self):
         '''find a number of pulses which is identical to len(pulse_indicies)'''
-        self.__pulse_st()
+        if not(self.maxvaluecall):
+            self.__pulse_st()
         query=("SELECT MAX(`{0}`.`pulse`) FROM `{0}`".format(self.tables[self.sett['pressure']][0]))
         self.cursor.execute(query)
         res=self.cursor.fetchall()
         dat=round(res[0][0],-3)
         num=int((dat-self.mval)/1000)
+        self.maxvaluecall=True
 #        print(self.mval,dat,num)
         return num
 #------------------------------------------------------------   
@@ -417,7 +427,79 @@ class timetotemp(sqdata):
         str1 = ''.join(list1)
         with open(name,'w') as file1:
             file1.write(str1)
-                  
+#------------------------------------------------------------   
+    @my_logger
+    @time_this 
+    def dlocal(self,data,loopn):
+        '''calulate and plot dt over dt for single pulse
+        data are time, q, T for both forks,
+        loopn - number of pulses'''
+        # calculate background
+        n1=900
+        n2=999
+        n_fir=100
+        npoly=6
+        l1=[] # T_hec
+        l2=[] # T_ic
+        l3=[] # time
+        f1=[] # hec
+        f2=[] # ic
+        f3=[] # time
+#        for ind,val in enumerate(data[4]):
+        for ii in range(loopn):
+            ni=np.where(np.logical_and(data[4]>=self.mval+ii*1000+n1, data[4]<=self.mval+ii*1000+n2))
+            nf=np.where(np.logical_and(data[4]>=self.mval+ii*1000, data[4]<=self.mval+ii*1000+n_fir))
+            l1.append(np.mean(data[2][ni[0]]))
+            l2.append(np.mean(data[6][ni[0]]))
+            l3.append(np.mean(data[0][ni[0]]))
+            for jj in nf[0]:
+                f1.append(data[2][jj])
+                f2.append(data[6][jj])
+                f3.append(data[0][jj])
+#            print(len(data[2][nf[0]]))
+        fit=np.polyfit(l3,l1,npoly)
+        fval=np.poly1d(fit)
+        fit2=np.polyfit(l3,l2,npoly)
+        fval2=np.poly1d(fit2)
+        print(len(f1))
+        # find dt's
+        dt1=[] # hec
+        dt2=[] # ic
+        for ind,val in enumerate(data[0]):
+            dt1.append(np.abs(data[2][ind]-fval(val)))
+            dt2.append(np.abs(data[6][ind]-fval2(val)))
+        for idx,(v1,v2,v3) in enumerate(zip(f1,f2,f3)):
+            f1[idx] = v1 - fval(v3)
+            f2[idx] = v2 - fval2(v3)
+        # plotting    
+        fig1 = plt.figure(5, clear = True)
+        ax1 = fig1.add_subplot(211)
+        ax1.set_ylabel(r'$T_{loc}^{HEC}/T_c$')
+        ax1.set_xlabel(r'$T_{loc}^{IC}/T_c$')
+        ax1.set_title(r'$T_{loc}$ vs time for both forks')
+        ax1.scatter(l3,l1,color='green', s=5)
+        ax1.scatter(data[0],fval(data[0]),color='red', s=0.5)
+        plt.grid()
+        ax2 = fig1.add_subplot(212)
+        ax2.set_ylabel(r'$T_{loc}^{HEC}/T_c$')
+        ax2.set_xlabel(r'$T_{loc}^{IC}/T_c$')
+        ax2.set_title(r'$T_{loc}$ vs time for both forks')
+        ax2.scatter(l3,l2,color='green', s=5)
+        ax2.scatter(data[0],fval2(data[0]),color='red', s=0.5)
+        plt.grid()
+        plt.show()
+        fig1 = plt.figure(6, clear = True)
+        ax1 = fig1.add_subplot(111)
+        ax1.set_ylabel(r'$\Delta T_{HEC}/T_c$')
+        ax1.set_xlabel(r'$\Delta T_{IC}/T_c$')
+        ax1.set_title(r'$\Delta$`s')
+#        ax1.scatter(dt2,dt1,color='green', s=5)
+        ax1.scatter(f2,f1,color='green', s=5)
+#        ax1.scatter(data[0],fval(data[0]),color='red', s=0.5)
+        plt.grid()
+        plt.show()
+        
+                 
 # main program below------------------------------------------------------------------------   
 if __name__ == '__main__':
     conf = {
@@ -433,7 +515,7 @@ if __name__ == '__main__':
            }
     sett3={'pressure':'22bar','indent':1000,'cut':41000,'offset':1
            }
-    A=timetotemp(conf,sett1)
+    A=timetotemp(conf,sett3)
     ##A.first_start()
     ##data1=A.sel_onlypulse(['time','Q','Tmc','index','pulse'],A.tables[A.sett['pressure']][0])
     ##data2=A.sel_onlypulse(['time','Q','Tmc','index'],A.tables[A.sett['pressure']][1])
@@ -452,10 +534,11 @@ if __name__ == '__main__':
     ##setattr(A.pick_sep,"callme",True)
     ##A.pick_sep.callme=True
     p_num=A.loop_number()
-    f_par=[A.pick_sep(ii,100) for ii in range(p_num)]
-    A.plot_dt(f_par)
-    A.save_dt(f_par)
+#    f_par=[A.pick_sep(ii,1000) for ii in range(p_num)]
+#    A.plot_dt(f_par)
+#    A.save_dt(f_par)
     dataJ=A.sel_onlypulseJoin(['time','Q','Tloc/Tc','index','pulse'],A.tables[A.sett['pressure']][0],['Q','Tloc/Tc'],A.tables[A.sett['pressure']][1])
+    A.dlocal(dataJ,p_num)
     #print(A.save_dt.__doc__)
     fig1 = plt.figure(1, clear = True)
     ax1 = fig1.add_subplot(211)
