@@ -430,44 +430,28 @@ class timetotemp(sqdata):
 #------------------------------------------------------------   
     @my_logger
     @time_this 
-    def dlocal(self,data,loopn):
+    def dlocal(self,data,loopn,n_pul):
         '''calulate and plot dt over dt for single pulse
         data are time, q, T for both forks,
         loopn - number of pulses'''
         # calculate background
         n1=900
         n2=999
-        n_fir=100
+        n_fir=200
         npoly=6
-        l1=[] # T_hec
-        l2=[] # T_ic
-        l3=[] # time
-        f1=[] # hec
-        f2=[] # ic
-        f3=[] # time
-#        for ind,val in enumerate(data[4]):
-        for ii in range(loopn):
-            ni=np.where(np.logical_and(data[4]>=self.mval+ii*1000+n1, data[4]<=self.mval+ii*1000+n2))
-            nf=np.where(np.logical_and(data[4]>=self.mval+ii*1000, data[4]<=self.mval+ii*1000+n_fir))
-            l1.append(np.mean(data[2][ni[0]]))
-            l2.append(np.mean(data[6][ni[0]]))
-            l3.append(np.mean(data[0][ni[0]]))
-            for jj in nf[0]:
-                f1.append(data[2][jj])
-                f2.append(data[6][jj])
-                f3.append(data[0][jj])
-#            print(len(data[2][nf[0]]))
+        l1=[np.mean(data[2][np.where(np.logical_and(data[4]>=self.mval+ii*1000+n1,data[4]<=self.mval+ii*1000+n2))[0]]) for ii in range(1,loopn)]
+        l2=[np.mean(data[6][np.where(np.logical_and(data[4]>=self.mval+ii*1000+n1,data[4]<=self.mval+ii*1000+n2))[0]]) for ii in range(1,loopn)]
+        l3=[np.mean(data[0][np.where(np.logical_and(data[4]>=self.mval+ii*1000+n1,data[4]<=self.mval+ii*1000+n2))[0]]) for ii in range(1,loopn)]
+        num=[len(np.where(np.logical_and(data[4]>=self.mval+ii*1000, data[4]<=self.mval+ii*1000+n_fir))[0]) for ii in range(1,loopn)]
+        f1=[data[2][jj] for ii in range(1,loopn) for jj in np.where(np.logical_and(data[4]>=self.mval+ii*1000, data[4]<=self.mval+ii*1000+n_fir))[0]]
+        f2=[data[6][jj] for ii in range(1,loopn) for jj in np.where(np.logical_and(data[4]>=self.mval+ii*1000, data[4]<=self.mval+ii*1000+n_fir))[0]]
+        f3=[data[0][jj] for ii in range(1,loopn) for jj in np.where(np.logical_and(data[4]>=self.mval+ii*1000, data[4]<=self.mval+ii*1000+n_fir))[0]]
+
         fit=np.polyfit(l3,l1,npoly)
         fval=np.poly1d(fit)
         fit2=np.polyfit(l3,l2,npoly)
         fval2=np.poly1d(fit2)
-        print(len(f1))
         # find dt's
-        dt1=[] # hec
-        dt2=[] # ic
-        for ind,val in enumerate(data[0]):
-            dt1.append(np.abs(data[2][ind]-fval(val)))
-            dt2.append(np.abs(data[6][ind]-fval2(val)))
         for idx,(v1,v2,v3) in enumerate(zip(f1,f2,f3)):
             f1[idx] = v1 - fval(v3)
             f2[idx] = v2 - fval2(v3)
@@ -488,14 +472,21 @@ class timetotemp(sqdata):
         ax2.scatter(data[0],fval2(data[0]),color='red', s=0.5)
         plt.grid()
         plt.show()
-        fig1 = plt.figure(6, clear = True)
-        ax1 = fig1.add_subplot(111)
-        ax1.set_ylabel(r'$\Delta T_{HEC}/T_c$')
-        ax1.set_xlabel(r'$\Delta T_{IC}/T_c$')
-        ax1.set_title(r'$\Delta$`s')
+        fig3 = plt.figure(6, clear = True)
+        ax3 = fig3.add_subplot(111)
+        ax3.set_ylabel(r'$\Delta T_{HEC}/T_c$')
+        ax3.set_xlabel(r'$\Delta T_{IC}/T_c$')
+        ax3.set_title(r'$\Delta$`s for '+self.sett['pressure'])
 #        ax1.scatter(dt2,dt1,color='green', s=5)
-        ax1.scatter(f2,f1,color='green', s=5)
+        ax3.set_prop_cycle(color=['red', 'green', 'blue','black','cyan'])
+        c1=0
+        for ii in range(n_pul):
+            c2=c1+num[ii]
+            ax3.scatter(f2[c1:c2],f1[c1:c2], lw=5, label=str(ii+1))
+            c1=c2
+            
 #        ax1.scatter(data[0],fval(data[0]),color='red', s=0.5)
+        ax3.legend()
         plt.grid()
         plt.show()
         
@@ -538,7 +529,7 @@ if __name__ == '__main__':
 #    A.plot_dt(f_par)
 #    A.save_dt(f_par)
     dataJ=A.sel_onlypulseJoin(['time','Q','Tloc/Tc','index','pulse'],A.tables[A.sett['pressure']][0],['Q','Tloc/Tc'],A.tables[A.sett['pressure']][1])
-    A.dlocal(dataJ,p_num)
+    A.dlocal(dataJ,p_num,5)
     #print(A.save_dt.__doc__)
     fig1 = plt.figure(1, clear = True)
     ax1 = fig1.add_subplot(211)

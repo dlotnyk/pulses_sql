@@ -12143,3 +12143,1123 @@ INFO:root: 2019-02-04 00:18:49 Ran with args: (timetotemp 22bar, db: pulses_he3,
 
 INFO:root: 2019-02-04 00:18:50 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
 
+INFO:root: 2019-02-04 00:39:07 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 00:39:07 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 00:39:07 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 00:39:07 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 00:39:08 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 00:39:08 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:21:38 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:21:38 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:21:38 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:21:38 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:21:38 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:21:39 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:34:59 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:34:59 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:34:59 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:34:59 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:34:59 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:35:24 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:35:24 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:35:24 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:35:24 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:35:24 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:35:25 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:38:43 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:38:43 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:38:43 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:38:43 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:38:44 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:38:45 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:40:11 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:40:11 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:40:11 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:40:11 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:40:12 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:40:13 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:40:35 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:40:35 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:40:35 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:40:35 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:40:36 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:40:37 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:50:26 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:50:26 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:50:26 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:50:26 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:50:27 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 10:50:28 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 11:12:02 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 11:12:02 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 11:12:02 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 11:12:02 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 11:12:03 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 11:12:04 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:35:02 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:35:02 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:35:02 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:35:02 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:35:02 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:35:04 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:35:43 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:35:43 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:35:43 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:35:43 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:35:43 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:35:45 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:38:19 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:38:19 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:38:19 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:38:19 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:38:20 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:38:21 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:38:48 Ran with args: (timetotemp 9psi, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:38:48 Ran with args: (timetotemp 9psi, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:38:48 Ran with args: (timetotemp 9psi, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:38:48 Ran with args: (timetotemp 9psi, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_9psi', ['Q', 'Tloc/Tc'], 'ic_9psi'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:38:49 Ran with args: (timetotemp 9psi, db: pulses_he3, array([[4.22170000e+04, 4.22220000e+04, 4.22260000e+04, ...,
+        2.24003000e+05, 2.24007000e+05, 2.24011000e+05],
+       [8.07577100e+01, 8.08414500e+01, 8.07577100e+01, ...,
+        2.87011000e+01, 2.88097500e+01, 2.89209200e+01],
+       [6.47053306e-01, 6.46687233e-01, 6.47053306e-01, ...,
+        1.00433251e+00, 1.00407904e+00, 1.00379558e+00],
+       ...,
+       [7.00019455e+04, 7.00038911e+04, 7.00058366e+04, ...,
+        1.25959459e+05, 1.25972973e+05, 1.25986486e+05],
+       [6.07337000e+01, 6.09060400e+01, 6.09083400e+01, ...,
+        1.30551300e+01, 1.26386900e+01, 1.29114300e+01],
+       [6.65771200e-01, 6.65023091e-01, 6.65013075e-01, ...,
+        1.00358724e+00, 1.00458516e+00, 1.00397027e+00]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:38:50 Ran with args: (timetotemp 9psi, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:39:34 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:39:34 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:39:34 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:39:34 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:39:34 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:39:35 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:39:57 Ran with args: (timetotemp 9psi, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:39:57 Ran with args: (timetotemp 9psi, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:39:57 Ran with args: (timetotemp 9psi, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:39:57 Ran with args: (timetotemp 9psi, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_9psi', ['Q', 'Tloc/Tc'], 'ic_9psi'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:39:58 Ran with args: (timetotemp 9psi, db: pulses_he3, array([[4.22170000e+04, 4.22220000e+04, 4.22260000e+04, ...,
+        2.24003000e+05, 2.24007000e+05, 2.24011000e+05],
+       [8.07577100e+01, 8.08414500e+01, 8.07577100e+01, ...,
+        2.87011000e+01, 2.88097500e+01, 2.89209200e+01],
+       [6.47053306e-01, 6.46687233e-01, 6.47053306e-01, ...,
+        1.00433251e+00, 1.00407904e+00, 1.00379558e+00],
+       ...,
+       [7.00019455e+04, 7.00038911e+04, 7.00058366e+04, ...,
+        1.25959459e+05, 1.25972973e+05, 1.25986486e+05],
+       [6.07337000e+01, 6.09060400e+01, 6.09083400e+01, ...,
+        1.30551300e+01, 1.26386900e+01, 1.29114300e+01],
+       [6.65771200e-01, 6.65023091e-01, 6.65013075e-01, ...,
+        1.00358724e+00, 1.00458516e+00, 1.00397027e+00]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:39:59 Ran with args: (timetotemp 9psi, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:40:30 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:40:30 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:40:30 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:40:30 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:40:31 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:40:32 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:52:12 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:52:12 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:52:12 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:52:12 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:52:13 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:54:31 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:54:31 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:54:31 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:54:31 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:54:32 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:54:33 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:55:26 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:55:26 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:55:26 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:55:26 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:55:27 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:55:29 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:56:27 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:56:27 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:56:27 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:56:27 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:56:28 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 15:56:29 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:37:37 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:37:37 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:37:37 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:37:37 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:37:38 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:37:40 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:49:53 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:49:53 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:49:53 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:49:53 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:49:53 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:50:09 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:50:09 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:50:09 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:50:09 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:50:10 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:50:11 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:50:50 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:50:50 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:50:50 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:50:50 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:50:51 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:50:53 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:51:15 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:51:15 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:51:15 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:51:15 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:51:16 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:51:17 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:51:42 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:51:42 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:51:42 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:51:42 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:51:43 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:51:43 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:52:30 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:52:30 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:52:30 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:52:30 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:52:30 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:52:31 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:52:43 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:52:43 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:52:43 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:52:43 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:52:43 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:52:44 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:53:09 Ran with args: (timetotemp 9psi, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:53:09 Ran with args: (timetotemp 9psi, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:53:09 Ran with args: (timetotemp 9psi, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:53:09 Ran with args: (timetotemp 9psi, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_9psi', ['Q', 'Tloc/Tc'], 'ic_9psi'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:53:10 Ran with args: (timetotemp 9psi, db: pulses_he3, array([[4.22170000e+04, 4.22220000e+04, 4.22260000e+04, ...,
+        2.24003000e+05, 2.24007000e+05, 2.24011000e+05],
+       [8.07577100e+01, 8.08414500e+01, 8.07577100e+01, ...,
+        2.87011000e+01, 2.88097500e+01, 2.89209200e+01],
+       [6.47053306e-01, 6.46687233e-01, 6.47053306e-01, ...,
+        1.00433251e+00, 1.00407904e+00, 1.00379558e+00],
+       ...,
+       [7.00019455e+04, 7.00038911e+04, 7.00058366e+04, ...,
+        1.25959459e+05, 1.25972973e+05, 1.25986486e+05],
+       [6.07337000e+01, 6.09060400e+01, 6.09083400e+01, ...,
+        1.30551300e+01, 1.26386900e+01, 1.29114300e+01],
+       [6.65771200e-01, 6.65023091e-01, 6.65013075e-01, ...,
+        1.00358724e+00, 1.00458516e+00, 1.00397027e+00]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:53:12 Ran with args: (timetotemp 9psi, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:53:47 Ran with args: (timetotemp 9psi, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:53:47 Ran with args: (timetotemp 9psi, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:53:47 Ran with args: (timetotemp 9psi, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:53:47 Ran with args: (timetotemp 9psi, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_9psi', ['Q', 'Tloc/Tc'], 'ic_9psi'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:53:48 Ran with args: (timetotemp 9psi, db: pulses_he3, array([[4.22170000e+04, 4.22220000e+04, 4.22260000e+04, ...,
+        2.24003000e+05, 2.24007000e+05, 2.24011000e+05],
+       [8.07577100e+01, 8.08414500e+01, 8.07577100e+01, ...,
+        2.87011000e+01, 2.88097500e+01, 2.89209200e+01],
+       [6.47053306e-01, 6.46687233e-01, 6.47053306e-01, ...,
+        1.00433251e+00, 1.00407904e+00, 1.00379558e+00],
+       ...,
+       [7.00019455e+04, 7.00038911e+04, 7.00058366e+04, ...,
+        1.25959459e+05, 1.25972973e+05, 1.25986486e+05],
+       [6.07337000e+01, 6.09060400e+01, 6.09083400e+01, ...,
+        1.30551300e+01, 1.26386900e+01, 1.29114300e+01],
+       [6.65771200e-01, 6.65023091e-01, 6.65013075e-01, ...,
+        1.00358724e+00, 1.00458516e+00, 1.00397027e+00]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:53:50 Ran with args: (timetotemp 9psi, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:54:07 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:54:07 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:54:07 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:54:07 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:54:07 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:54:08 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:54:15 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:54:15 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:54:15 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:54:15 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:54:16 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:54:18 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:59:28 Ran with args: (timetotemp 0bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:59:28 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:59:28 Ran with args: (timetotemp 0bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:59:28 Ran with args: (timetotemp 0bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_0bar', ['Q', 'Tloc/Tc'], 'ic_0bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:59:29 Ran with args: (timetotemp 0bar, db: pulses_he3, array([[3.88290000e+04, 3.88330000e+04, 3.88380000e+04, ...,
+        1.98438000e+05, 1.98442000e+05, 1.98446000e+05],
+       [9.63657300e+01, 9.63657300e+01, 9.63657300e+01, ...,
+        9.81001000e+00, 9.81001000e+00, 9.72118800e+00],
+       [4.59416985e-01, 4.59416985e-01, 4.59416985e-01, ...,
+        1.00126421e+00, 1.00126421e+00, 1.00167698e+00],
+       ...,
+       [7.00040650e+04, 7.00081301e+04, 7.00121951e+04, ...,
+        1.25980616e+05, 1.25981756e+05, 1.25982896e+05],
+       [8.95365900e+01, 8.92184000e+01, 8.96178600e+01, ...,
+        1.27770500e+01, 1.22228300e+01, 1.28433500e+01],
+       [4.83683688e-01, 4.84273434e-01, 4.83532794e-01, ...,
+        1.00015258e+00, 1.00272704e+00, 9.99861388e-01]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 18:59:31 Ran with args: (timetotemp 0bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 19:00:27 Ran with args: (timetotemp 9psi, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 19:00:27 Ran with args: (timetotemp 9psi, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 19:00:27 Ran with args: (timetotemp 9psi, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 19:00:27 Ran with args: (timetotemp 9psi, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_9psi', ['Q', 'Tloc/Tc'], 'ic_9psi'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 19:00:28 Ran with args: (timetotemp 9psi, db: pulses_he3, array([[4.22170000e+04, 4.22220000e+04, 4.22260000e+04, ...,
+        2.24003000e+05, 2.24007000e+05, 2.24011000e+05],
+       [8.07577100e+01, 8.08414500e+01, 8.07577100e+01, ...,
+        2.87011000e+01, 2.88097500e+01, 2.89209200e+01],
+       [6.47053306e-01, 6.46687233e-01, 6.47053306e-01, ...,
+        1.00433251e+00, 1.00407904e+00, 1.00379558e+00],
+       ...,
+       [7.00019455e+04, 7.00038911e+04, 7.00058366e+04, ...,
+        1.25959459e+05, 1.25972973e+05, 1.25986486e+05],
+       [6.07337000e+01, 6.09060400e+01, 6.09083400e+01, ...,
+        1.30551300e+01, 1.26386900e+01, 1.29114300e+01],
+       [6.65771200e-01, 6.65023091e-01, 6.65013075e-01, ...,
+        1.00358724e+00, 1.00458516e+00, 1.00397027e+00]]), 56), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 19:00:30 Ran with args: (timetotemp 9psi, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 19:01:36 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 19:01:36 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 19:01:36 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 19:01:36 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 19:01:36 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 19:01:37 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:03:52 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:03:52 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:03:52 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:03:52 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:03:52 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20, 5), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:03:53 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:07:44 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:07:44 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:07:44 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:07:44 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:07:45 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20, 5), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:07:46 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:17:45 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:17:45 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:17:45 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:17:45 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:17:46 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20, 5), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:17:47 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:19:07 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:19:07 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:19:07 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:19:07 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:19:07 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20, 5), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:19:08 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:21:29 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:21:29 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:21:29 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:21:29 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:21:29 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20, 5), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:21:30 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:26:30 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:26:30 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:26:30 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:26:30 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:26:31 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20, 5), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:26:31 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:27:17 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:27:17 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:27:17 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:27:17 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:27:18 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20, 5), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:27:27 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:27:27 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:27:27 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:27:27 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:27:27 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20, 5), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:27:28 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:28:34 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:28:34 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:28:34 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:28:34 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:28:34 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20, 5), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:28:35 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:30:22 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:30:22 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:30:22 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:30:22 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:30:22 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20, 5), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:30:23 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:33:28 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:33:28 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:33:28 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:33:28 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:33:28 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20, 5), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:33:29 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:35:49 Ran with args: (timetotemp 22bar, db: pulses_he3, {'user': 'dlotnyk', 'password': 'RiDeaBiKe2RuN', 'host': '127.0.0.1', 'database': 'pulses_he3', 'raise_on_warnings': True}), __init__, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:35:49 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:35:49 Ran with args: (timetotemp 22bar, db: pulses_he3,), loop_number, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:35:49 Ran with args: (timetotemp 22bar, db: pulses_he3, ['time', 'Q', 'Tloc/Tc', 'index', 'pulse'], 'hec_22bar', ['Q', 'Tloc/Tc'], 'ic_22bar'), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:35:50 Ran with args: (timetotemp 22bar, db: pulses_he3, array([[4.19300000e+03, 4.19700000e+03, 4.20100000e+03, ...,
+        9.09790000e+04, 9.09830000e+04, 9.09880000e+04],
+       [4.02940900e+03, 4.02767900e+03, 4.02765100e+03, ...,
+        8.97272600e+01, 8.85534900e+01, 8.74126300e+01],
+       [2.69817005e-01, 2.69916729e-01, 2.69918294e-01, ...,
+        1.00673853e+00, 1.01409521e+00, 1.02134075e+00],
+       ...,
+       [3.00021277e+04, 3.00042553e+04, 3.00063830e+04, ...,
+        4.99951378e+04, 4.99967585e+04, 4.99983793e+04],
+       [5.52194100e+02, 5.51888100e+02, 5.51956600e+02, ...,
+        9.08990000e+01, 9.10318700e+01, 9.08826600e+01],
+       [4.31467659e-01, 4.31526836e-01, 4.31513584e-01, ...,
+        1.00592943e+00, 1.00510409e+00, 1.00603102e+00]]), 20, 5), <module, and kwargs: {} 
+
+INFO:root: 2019-02-04 22:35:50 Ran with args: (timetotemp 22bar, db: pulses_he3,), <module, and kwargs: {} 
+
