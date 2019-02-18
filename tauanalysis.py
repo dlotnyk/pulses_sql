@@ -256,7 +256,7 @@ class timetotemp(sqdata):
         ax1.plot(res[0][d1], res[1][d1], color='green',lw=1)
         ax1.plot(res[0][d1], fit_fn(res[0][d1]), color='blue',lw=1)
         plt.grid()
-        plt.show()
+        #plt.show()
         return fit,fit_rev
     
  #------------------------------------------------------------
@@ -293,7 +293,7 @@ class timetotemp(sqdata):
 #        ax2.plot(Q,T, color='red',lw=1)
 #        ax2.plot(filt,res[1], color='green',lw=1)
         plt.grid()
-        plt.show()
+        #plt.show()
 #        dat=np.vstack((filt,T))
         return fit2
     #------------------------------------------------------------
@@ -318,7 +318,7 @@ class timetotemp(sqdata):
 #        ax1.plot(res[1],Q, color='red',lw=1)
 #        ax1.plot(res[1],filt, color='green',lw=1)
         plt.grid()
-        plt.show()
+        #plt.show()
         return dQ    
         
  #------------------------------------------------------------
@@ -378,7 +378,7 @@ class timetotemp(sqdata):
         ax1.scatter(dat1[1][0:nump], dat1[0][0:nump], color='blue',s=2)
 #        ax1.scatter(dat1[1], dat1[0], color='blue',s=2)
         plt.grid()
-        plt.show()
+        #plt.show()
         self.callme=False
         if fit[0]<0:
             fit[0]=np.nan
@@ -414,7 +414,7 @@ class timetotemp(sqdata):
         ax1.set_title('dT/dT')
         ax1.scatter([ii[1] for ii in f],[ii[0] for ii in f],color='green', s=5)
         plt.grid()
-        plt.show()
+        #plt.show()
 #------------------------------------------------------------   
     @my_logger
     @time_this 
@@ -433,7 +433,9 @@ class timetotemp(sqdata):
     def dlocal(self,data,loopn,n_pul):
         '''calulate and plot dt over dt for single pulse
         data are time, q, T for both forks,
-        loopn - number of pulses'''
+        loopn - number of pulses
+        f1 is a dt for HEC; f2 is a dt for IC, f3 is a time
+        num is a number of points in each pulse'''
         # calculate background
         n1=900
         n2=999
@@ -471,24 +473,57 @@ class timetotemp(sqdata):
         ax2.scatter(l3,l2,color='green', s=5)
         ax2.scatter(data[0],fval2(data[0]),color='red', s=0.5)
         plt.grid()
-        plt.show()
+        #plt.show()
         fig3 = plt.figure(6, clear = True)
         ax3 = fig3.add_subplot(111)
         ax3.set_ylabel(r'$\Delta T_{HEC}/T_c$')
         ax3.set_xlabel(r'$\Delta T_{IC}/T_c$')
         ax3.set_title(r'$\Delta$`s for '+self.sett['pressure'])
 #        ax1.scatter(dt2,dt1,color='green', s=5)
-        ax3.set_prop_cycle(color=['red', 'green', 'blue','black','cyan'])
+        ax3.set_prop_cycle(color=['red', 'green', 'blue','black','cyan','magenta','orange'])
         c1=0
         for ii in range(n_pul):
             c2=c1+num[ii]
-            ax3.scatter(f2[c1:c2],f1[c1:c2], lw=5, label=str(ii+1))
+            ax3.scatter(f2[c1:c2],f1[c1:c2], lw=3, label=str(ii+1))
             c1=c2
             
 #        ax1.scatter(data[0],fval(data[0]),color='red', s=0.5)
         ax3.legend()
         plt.grid()
-        plt.show()
+        #plt.show()
+        return f1,f2,f3,num
+#------------------------------------------------------------   
+    @my_logger
+    @time_this 
+    def dpart(self,f1,f2,f3,num,n_pul):
+        '''analysis of pulses found in dlocal method
+        f1 is a dt for HEC; f2 is a dt for IC, f3 is a time
+        num is a number of points in each pulse
+        n_pul is a number of pulses we want to show'''
+        cut=0.30 # 15 % to cut
+        c1=0
+        fig1 = plt.figure(7, clear = True)
+        ax1 = fig1.add_subplot(111)
+        ax1.set_ylabel(r'$\Delta T_{HEC}/T_c$')
+        ax1.set_xlabel(r'$\Delta T_{IC}/T_c$')
+        ax1.set_title(r'$\Delta$`s for '+self.sett['pressure'])
+#        ax1.scatter(dt2,dt1,color='green', s=5)
+        ax1.set_prop_cycle(color=['red', 'green', 'blue','black','cyan','magenta','orange'])
+        for ii in range(n_pul):
+            c2=c1+num[ii]
+            x1=np.asarray(f1[c1:c2])
+            x2=np.asarray(f2[c1:c2])
+            ma=np.amax(x1)
+            mi=np.amin(x1)
+            valcut=mi+cut*(ma-mi)
+            ind=np.where(x1<=valcut)
+            ax1.scatter(x2[ind],x1[ind], lw=3, label=str(ii+1))
+            c1=c2
+#        ax1.legend()
+        plt.grid()
+        return ind
+        
+        
         
                  
 # main program below------------------------------------------------------------------------   
@@ -506,22 +541,23 @@ if __name__ == '__main__':
            }
     sett3={'pressure':'22bar','indent':1000,'cut':41000,'offset':1
            }
-    A=timetotemp(conf,sett3)
-    ##A.first_start()
-    ##data1=A.sel_onlypulse(['time','Q','Tmc','index','pulse'],A.tables[A.sett['pressure']][0])
-    ##data2=A.sel_onlypulse(['time','Q','Tmc','index'],A.tables[A.sett['pressure']][1])
-    ##A.nopulse1,A.nopulse2=A.pulse_remove(15,35,data1,data2) # for 0 bar
-    ##A.nopulse1,A.nopulse2=A.pulse_remove(10,50,data1,data2) # for 9 psi and 22 bar
-    ##del data1
-    ##del data2
-    ##f_lt,f_tl=A.temp_fit(1)
-    ##f_lt,f_tl=A.temp_fit(3) # 9psi
-    ##f_lt,f_tl=A.temp_fit(4) # for 22 bar
-    ##fit_qt=A.QtoT(10) # optimal for 0 bar and 9 psi
-    ##fit_qt=A.QtoT(16) # for 22 bar
-    ##dQ=A.QtoTic(fit_qt)
-    ##A.update_local(A.tables[A.sett['pressure']][0],fit_qt,0)
-    ##A.update_local(A.tables[A.sett['pressure']][1],fit_qt,dQ)
+    toplot=False
+    A=timetotemp(conf,sett2)
+#    A.first_start()
+#    data1=A.sel_onlypulse(['time','Q','Tmc','index','pulse'],A.tables[A.sett['pressure']][0])
+#    data2=A.sel_onlypulse(['time','Q','Tmc','index'],A.tables[A.sett['pressure']][1])
+#    A.nopulse1,A.nopulse2=A.pulse_remove(15,35,data1,data2) # for 0 bar
+#    A.nopulse1,A.nopulse2=A.pulse_remove(10,50,data1,data2) # for 9 psi and 22 bar
+#    del data1
+#    del data2
+#    f_lt,f_tl=A.temp_fit(1)
+#    f_lt,f_tl=A.temp_fit(3) # 9psi
+#    f_lt,f_tl=A.temp_fit(4) # for 22 bar
+#    fit_qt=A.QtoT(10) # optimal for 0 bar and 9 psi
+#    fit_qt=A.QtoT(16) # for 22 bar
+#    dQ=A.QtoTic(fit_qt)
+#    A.update_local(A.tables[A.sett['pressure']][0],fit_qt,0)
+#    A.update_local(A.tables[A.sett['pressure']][1],fit_qt,dQ)
     ##setattr(A.pick_sep,"callme",True)
     ##A.pick_sep.callme=True
     p_num=A.loop_number()
@@ -529,31 +565,36 @@ if __name__ == '__main__':
 #    A.plot_dt(f_par)
 #    A.save_dt(f_par)
     dataJ=A.sel_onlypulseJoin(['time','Q','Tloc/Tc','index','pulse'],A.tables[A.sett['pressure']][0],['Q','Tloc/Tc'],A.tables[A.sett['pressure']][1])
-    A.dlocal(dataJ,p_num,5)
-    #print(A.save_dt.__doc__)
-    fig1 = plt.figure(1, clear = True)
-    ax1 = fig1.add_subplot(211)
-    ax1.set_ylabel('Q')
-    ax1.set_xlabel('time [sec]')
-    ax1.set_title('Q vs time for both forks')
-    ax1.scatter(dataJ[0],dataJ[1],color='green', s=0.5)
-    ax1.scatter(dataJ[0],dataJ[5],color='red', s=0.5)
-    plt.grid()
-    ax2 = fig1.add_subplot(212)
-    ax2.set_ylabel('T')
-    ax2.set_xlabel('time [sec]')
-    ax2.set_title('T vs time for both forks')
-    ax2.scatter(dataJ[0],dataJ[2],color='green', s=0.5)
-    ax2.scatter(dataJ[0],dataJ[6],color='red', s=0.5)
-    plt.grid()
-    plt.show()
-    fig2 = plt.figure(2, clear = True)
-    ax1 = fig2.add_subplot(111)
-    ax1.set_ylabel('pulse')
-    ax1.set_xlabel('time [sec]')
-    ax1.set_title('pulse vs time for both forks')
-    ax1.scatter(dataJ[0],dataJ[4],color='green', s=0.5)
-    plt.grid()
-    plt.show()
+    f1,f2,f3,fnum=A.dlocal(dataJ,p_num,10)
+    ind=A.dpart(f1,f2,f3,fnum,p_num-4)
     A.close_f()
     del A
+    #print(A.save_dt.__doc__)
+    if toplot:
+
+        fig1 = plt.figure(1, clear = True)
+        ax1 = fig1.add_subplot(211)
+        ax1.set_ylabel('Q')
+        ax1.set_xlabel('time [sec]')
+        ax1.set_title('Q vs time for both forks')
+        ax1.scatter(dataJ[0],dataJ[1],color='green', s=0.5)
+        ax1.scatter(dataJ[0],dataJ[5],color='red', s=0.5)
+        plt.grid()
+        ax2 = fig1.add_subplot(212)
+        ax2.set_ylabel('T')
+        ax2.set_xlabel('time [sec]')
+        ax2.set_title('T vs time for both forks')
+        ax2.scatter(dataJ[0],dataJ[2],color='green', s=0.5)
+        ax2.scatter(dataJ[0],dataJ[6],color='red', s=0.5)
+        plt.grid()
+        #plt.show()
+        fig2 = plt.figure(2, clear = True)
+        ax1 = fig2.add_subplot(111)
+        ax1.set_ylabel('pulse')
+        ax1.set_xlabel('time [sec]')
+        ax1.set_title('pulse vs time for both forks')
+        ax1.scatter(dataJ[0],dataJ[4],color='green', s=0.5)
+        plt.grid()
+        #plt.show()
+    plt.show()
+
