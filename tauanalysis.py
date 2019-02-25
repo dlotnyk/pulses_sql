@@ -504,7 +504,7 @@ class timetotemp(sqdata):
         f1 is a dt for HEC; f2 is a dt for IC, f3 is a time
         num is a number of points in each pulse
         n_pul is a number of pulses we want to show'''
-        cut=0.5 # 15 % to cut
+        cut=0.25 # 15 % to cut
         c1=0
         fig1 = plt.figure(7, clear = True)
         ax1 = fig1.add_subplot(211)
@@ -543,6 +543,7 @@ class timetotemp(sqdata):
         ax2.set_xlabel(r'time will do the temperature')
         ax2.scatter(temp,slopes, lw=3, label=str(ii+1))
         plt.grid()
+        self.saveslopes(slopes, temp)
         return slopes
 #------------------------------------------------------------   
     @my_logger
@@ -565,7 +566,7 @@ if __name__ == '__main__':
     sett3={'pressure':'22bar','indent':1000,'cut':41000,'offset':1
            }
     toplot=False
-    A=timetotemp(conf,sett1)
+    A=timetotemp(conf,sett3)
 #    A.first_start()
 #    data1=A.sel_onlypulse(['time','Q','Tmc','index','pulse'],A.tables[A.sett['pressure']][0])
 #    data2=A.sel_onlypulse(['time','Q','Tmc','index'],A.tables[A.sett['pressure']][1])
@@ -590,7 +591,7 @@ if __name__ == '__main__':
     dataJ=A.sel_onlypulseJoin(['time','Q','Tloc/Tc','index','pulse'],A.tables[A.sett['pressure']][0],['Q','Tloc/Tc','Tmc/Tc'],A.tables[A.sett['pressure']][1])
     f1,f2,f3,fnum,Tmc=A.dlocal(dataJ,p_num,10)
     slopes=A.dpart(f1,f2,f3,fnum,p_num-4,Tmc)
-    A.saveslopes(slopes,Tmc)
+#    A.saveslopes(slopes,Tmc)
     A.close_f()
     del A
     #print(A.save_dt.__doc__)
