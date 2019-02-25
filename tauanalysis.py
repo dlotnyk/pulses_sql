@@ -20,13 +20,16 @@ from createdata import sql_create as sqdata
 from createdata import time_this
 from createdata import my_logger
 from createdata import calltracker
+import sys
+sys.path.insert(0,'e:\\repos\\')
+from configa import conf
 
 #-------------------------------------
 class timetotemp(sqdata):
     vals=['time','Q','Tmc','index','pulse'] # the most important columns
     plimit=1500 # value in Q which identify the pulsing
     callme=True
-    
+    tc={'0bar':0.929,'9psi':1.013,'22bar':2.293} # list of Tc for experiments
 #---------------------------------------------------------
     def __init__(self,conf,sett):
         '''connect to conn mysql server with data'''
@@ -448,7 +451,8 @@ class timetotemp(sqdata):
         f1=[data[2][jj] for ii in range(1,loopn) for jj in np.where(np.logical_and(data[4]>=self.mval+ii*1000, data[4]<=self.mval+ii*1000+n_fir))[0]]
         f2=[data[6][jj] for ii in range(1,loopn) for jj in np.where(np.logical_and(data[4]>=self.mval+ii*1000, data[4]<=self.mval+ii*1000+n_fir))[0]]
         f3=[data[0][jj] for ii in range(1,loopn) for jj in np.where(np.logical_and(data[4]>=self.mval+ii*1000, data[4]<=self.mval+ii*1000+n_fir))[0]]
-
+        Tmc=[data[7][jj]/self.tc[self.sett['pressure']] for ii in range(1,loopn) for jj in np.where(np.logical_and(data[4]>=self.mval+ii*1000, data[4]<=self.mval+ii*1000+n_fir))[0]]
+        
         fit=np.polyfit(l3,l1,npoly)
         fval=np.poly1d(fit)
         fit2=np.polyfit(l3,l2,npoly)
@@ -491,50 +495,69 @@ class timetotemp(sqdata):
         ax3.legend()
         plt.grid()
         #plt.show()
-        return f1,f2,f3,num
+        return f1,f2,f3,num,Tmc
 #------------------------------------------------------------   
     @my_logger
     @time_this 
-    def dpart(self,f1,f2,f3,num,n_pul):
+    def dpart(self,f1,f2,f3,num,n_pul,Tmc):
         '''analysis of pulses found in dlocal method
         f1 is a dt for HEC; f2 is a dt for IC, f3 is a time
         num is a number of points in each pulse
         n_pul is a number of pulses we want to show'''
-        cut=0.30 # 15 % to cut
+        cut=0.5 # 15 % to cut
         c1=0
         fig1 = plt.figure(7, clear = True)
-        ax1 = fig1.add_subplot(111)
+        ax1 = fig1.add_subplot(211)
         ax1.set_ylabel(r'$\Delta T_{HEC}/T_c$')
         ax1.set_xlabel(r'$\Delta T_{IC}/T_c$')
         ax1.set_title(r'$\Delta$`s for '+self.sett['pressure'])
 #        ax1.scatter(dt2,dt1,color='green', s=5)
         ax1.set_prop_cycle(color=['red', 'green', 'blue','black','cyan','magenta','orange'])
+        slopes=np.zeros(n_pul)
+        temp=np.zeros(n_pul)
         for ii in range(n_pul):
             c2=c1+num[ii]
             x1=np.asarray(f1[c1:c2])
             x2=np.asarray(f2[c1:c2])
             ma=np.amax(x1)
             mi=np.amin(x1)
-            valcut=mi+cut*(ma-mi)
+            if self.sett['pressure'] == '0bar':
+                valcut=ma-cut*(ma-mi) # 0bar
+            else:
+                valcut=mi+cut*(ma-mi) # 9psi and 22 bar
+#                valcut=ma-cut*(ma-mi) # 0bar
+                
             ind=np.where(x1<=valcut)
             ax1.scatter(x2[ind],x1[ind], lw=3, label=str(ii+1))
+            fit=np.polyfit(x2[ind],x1[ind],1)
+            temp[ii]=np.mean(Tmc[c1:c2])
+            if fit[0] < 0:
+                slopes[ii]=np.nan
+            else:
+                slopes[ii]=fit[0]
             c1=c2
 #        ax1.legend()
         plt.grid()
-        return ind
-        
-        
-        
+        ax2 = fig1.add_subplot(212)
+        ax2.set_ylabel(r'$\Delta T_{HEC}/\Delta T_{IC}$')
+        ax2.set_xlabel(r'time will do the temperature')
+        ax2.scatter(temp,slopes, lw=3, label=str(ii+1))
+        plt.grid()
+        return slopes
+#------------------------------------------------------------   
+    @my_logger
+    @time_this 
+    def saveslopes(self,slopes,Tmc):        
+        '''save slopes into file'''
+        name="slopes_for_"+self.sett['pressure']+'.dat'
+        list1=["{0} \t {1} \n".format(jj,ii) for ii,jj in zip(slopes,Tmc)]
+        list1.insert(0,"{0} \t {1} \n".format("Tmc/Tc","dThec/dTic"))
+        str1 = ''.join(list1)
+        with open(name,'w') as file1:
+            file1.write(str1)
                  
 # main program below------------------------------------------------------------------------   
 if __name__ == '__main__':
-    conf = {
-            'user': 'dlotnyk',
-            'password': 'RiDeaBiKe2RuN',
-            'host': '127.0.0.1',
-            'database': 'pulses_he3',
-            'raise_on_warnings': True,
-            }
     sett1={'pressure':'0bar','indent':9200,'cut':47000,'offset':1800
            }
     sett2={'pressure':'9psi','indent':10000,'cut':53000,'offset':700
@@ -542,7 +565,7 @@ if __name__ == '__main__':
     sett3={'pressure':'22bar','indent':1000,'cut':41000,'offset':1
            }
     toplot=False
-    A=timetotemp(conf,sett2)
+    A=timetotemp(conf,sett1)
 #    A.first_start()
 #    data1=A.sel_onlypulse(['time','Q','Tmc','index','pulse'],A.tables[A.sett['pressure']][0])
 #    data2=A.sel_onlypulse(['time','Q','Tmc','index'],A.tables[A.sett['pressure']][1])
@@ -564,9 +587,10 @@ if __name__ == '__main__':
 #    f_par=[A.pick_sep(ii,1000) for ii in range(p_num)]
 #    A.plot_dt(f_par)
 #    A.save_dt(f_par)
-    dataJ=A.sel_onlypulseJoin(['time','Q','Tloc/Tc','index','pulse'],A.tables[A.sett['pressure']][0],['Q','Tloc/Tc'],A.tables[A.sett['pressure']][1])
-    f1,f2,f3,fnum=A.dlocal(dataJ,p_num,10)
-    ind=A.dpart(f1,f2,f3,fnum,p_num-4)
+    dataJ=A.sel_onlypulseJoin(['time','Q','Tloc/Tc','index','pulse'],A.tables[A.sett['pressure']][0],['Q','Tloc/Tc','Tmc/Tc'],A.tables[A.sett['pressure']][1])
+    f1,f2,f3,fnum,Tmc=A.dlocal(dataJ,p_num,10)
+    slopes=A.dpart(f1,f2,f3,fnum,p_num-4,Tmc)
+    A.saveslopes(slopes,Tmc)
     A.close_f()
     del A
     #print(A.save_dt.__doc__)
